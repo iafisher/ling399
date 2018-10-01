@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage{natbib}
+\bibliographystyle{linquiry2}
+\usepackage{gb4e}
+
+% Cite an author, e.g. Davidson's (1967)
+\newcommand{\citegen}[1]{\citeauthor{#1}'s~(\citeyear{#1})}
+
+\title{\textit{The only} and definiteness in English and Russian}
+\author{Ian Fisher}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent LING399 Presentation I at Haverford College, 5 October 2018.
+
+\section*{Background}
+\subsection*{Predicative definites}
+\begin{exe}
+	\ex Napoleon is the greatest French soldier.
+	\ex John is tall, handsome, and the love of my life.
+\end{exe}
+
+\subsection*{Anti-uniqueness effects}
+\begin{exe}
+	\ex Tolstoy is not the only author of \textit{War and Peace}.
+	\ex Cheryshev didn't score the only goal.
+\end{exe}
+
+\subsection*{\citet{cb2015}}
+\citegen{cb2015} proposal for the semantics of definites in English:
+
+\begin{itemize}
+	\item Definite descriptions are predicative (type $\langle e, t \rangle$).
+	\item The indefinite and definite articles are identity functions. The definite article carries a weak uniqueness presupposition.
+	\item Definite descriptions receive determinate meaning and argumental status through type-shifting \`{a} la \citet{partee86}.
+\end{itemize}
+
+\section*{\textit{Only}, \textit{sole}, \textit{single} and \textit{one}}
+Diagnostics adapted from \citet{cb2012a}
+
+\begin{exe}
+	\ex This company has a(n) (*only/sole/single/*one) director.
+	\ex Climate change is the (*only/?sole/single/??one) greatest threat to human life.
+	\ex They are the (only/sole/*single/*one) people I trust.
+	\ex The (only/?sole/??single/?one) truck I ever drove was red.
+	\ex Not a(n) (*only/sole/single/*one) person showed up.
+\end{exe}
+
+\begin{tabular}{ c | c c c c c }
+	& indefinite & superlative & plural & licenses NPIs & DP negation \\
+	\hline
+	\textit{only} & no & no & yes & yes & no \\
+	\textit{sole} & yes & yes & yes & yes & yes \\
+	\textit{single} & yes & yes & no & marginal & yes \\
+	\textit{one} & no & marginal & no & yes & no \\
+\end{tabular}
+
+\bibliography{thesis}
+
+\end{document}
