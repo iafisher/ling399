@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage{verbatim}
 \usepackage{natbib}
 \bibliographystyle{linquiry2}
 \usepackage{gb4e}
@@ -16,19 +17,65 @@
 
 \noindent LING399 Presentation I at Haverford College, 5 October 2018.
 
-\section*{Background}
-\subsection*{Predicative definites}
+\section{A puzzle}
+Courtesy of \citet{cb2015}.
+
 \begin{exe}
-	\ex Napoleon is the greatest French soldier.
-	\ex John is tall, handsome, and the love of my life.
+	\ex Scott is not the only author of \textit{Waverley}.
+	\ex Anna didn't score the only goal.
 \end{exe}
 
-\subsection*{Anti-uniqueness effects}
+\section{Research questions}
+\begin{itemize}
+	\item What are the semantics of \textit{the only} constructions in English and in Russian?
+	\item How do the semantics of \textit{the only} relate to definiteness?
+	\item What is the relationship between regular \textit{only} and \textit{the only}?
+\end{itemize}
+
+\section{Russian data}
+\subsection*{\textit{Tol'ko} and \textit{edinstvennyj}}
 \begin{exe}
-	\ex Tolstoy is not the only author of \textit{War and Peace}.
-	\ex Cheryshev didn't score the only goal.
+	\ex \gll \textbf{Tol'ko} studenty pri\v{s}li.\\
+	\textbf{only} students came\\
+	\glt `Only the students came.'
+	\ex \gll Marija vzjala \textbf{edinstvennuju} knigu.\\
+	Maria took \textbf{only} book.\\
+	\glt `Maria took the only book.'
 \end{exe}
 
+\subsection*{Predicative anti-uniqueness}
+\begin{exe}
+	\ex \gll Tolstoj ne edinstvennyj avtor \textit{Vojny i mira}\\
+	Tolstoy not only author \textit{War and Peace}\\
+	\glt `Tolstoy is not the only author of \textit{War and Peace}.'
+\end{exe}
+
+\subsection*{Argumental anti-uniqueness}
+\begin{exe}
+	\ex Anna didn't score the only goal. *It was an excellent strike.
+	\ex \gll Anna \textbf{ne} zabila edinstvennyj gol. On byl otlichnyj udar.\\
+	Anna \textbf{not} scored only goal it was excellent strike\\
+	\glt `Anna didn't score the only goal. It was an excellent strike.' (one goal)
+	\ex \gll Anna zabila \textbf{ne} edinstvennyj gol. On byl otlichnyj udar.\\
+	Anna scored \textbf{not} only goal it was excellent strike\\
+	\glt `Anna didn't score the only goal. It was an excellent strike.' (multiple goals)
+\end{exe}
+
+\subsection*{Indefinite \textit{edinstvennyj}}
+\begin{exe}
+	\ex \gll U etoj kompanii --- (odin/??edinstvennyj) direktor\\
+	At this company {} (one/only) director\\
+	\glt `This company has a sole director.'
+\end{exe}
+
+\section{Analysis}
+\begin{itemize}
+	\item \textit{Only} and \textit{the only} are different words in Russian, suggesting that they may have different semantics.
+	\item Anti-uniqueness effects are evident in predicative definites but not in argumental definites.
+	\item Contrary to \citegen{cb2015} predictions, indeterminate readings for \textit{edinstvennyj} do not seem to be more widely available in Russian.
+\end{itemize}
+
+\begin{comment}
 \subsection*{\citet{cb2015}}
 \citegen{cb2015} proposal for the semantics of definites in English:
 
@@ -38,25 +85,37 @@
 	\item Definite descriptions receive determinate meaning and argumental status through type-shifting \`{a} la \citet{partee86}.
 \end{itemize}
 
-\section*{\textit{Only}, \textit{sole}, \textit{single} and \textit{one}}
-Diagnostics adapted from \citet{cb2012a}
+\section{\textit{Only}, \textit{sole}, \textit{single} and \textit{one}}
+Diagnostics adapted from \citet{cb2012a}.
 
 \begin{exe}
-	\ex This company has a(n) (*only/sole/single/*one) director.
-	\ex Climate change is the (*only/?sole/single/??one) greatest threat to human life.
-	\ex They are the (only/sole/*single/*one) people I trust.
-	\ex The (only/?sole/??single/?one) truck I ever drove was red.
-	\ex Not a(n) (*only/sole/single/*one) person showed up.
+	\ex \textbf{With indefinite article}: This company has a(n) (*only/sole/single/*one) director.
+	\ex \textbf{With superlative}: Climate change is the (*only/?sole/single/??one) greatest threat to human life.
+	\ex \textbf{With plural NP}: They are the (only/sole/*single/*one) people I trust.
+	\ex \textbf{Licensing of NPIs}: The (only/?sole/??single/?one) truck I ever drove was red.
+	\ex \textbf{DP negation}: Not a(n) (*only/sole/single/*one) person showed up.
 \end{exe}
 
+\noindent In summary:\\
+
 \begin{tabular}{ c | c c c c c }
-	& indefinite & superlative & plural & licenses NPIs & DP negation \\
+	& indefinite article & superlative & plural & licenses NPIs & DP negation \\
 	\hline
 	\textit{only} & no & no & yes & yes & no \\
 	\textit{sole} & yes & yes & yes & yes & yes \\
 	\textit{single} & yes & yes & no & marginal & yes \\
 	\textit{one} & no & marginal & no & yes & no \\
 \end{tabular}
+
+Applying these diagnostics for Russian suggests that \textit{edinstvennyj}
+\end{comment}
+
+\section{Outlook}
+\begin{itemize}
+	\ex More data collection in Russian
+	\ex Does \textit{edinstvennyj} correspond to \textit{only}, \textit{single}, \textit{sole}, or \textit{one}?
+	\ex More research on negation and its interaction with \textit{the only}
+\end{itemize}
 
 \bibliography{thesis}
 
