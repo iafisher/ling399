@@ -1,4 +1,9 @@
-/texstudio_build
 *.pdf
 *.swp
+
+# Files created by JabRef
 *.bib.bak
+*.sav
+
+# Build folder for the TeX files
+/texstudio_build
