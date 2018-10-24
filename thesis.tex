@@ -19,7 +19,7 @@
 \begin{abstract}
 % TODO: Update this for Draft 1.
 
-This thesis draft reviews several issues related to DP-internal \textit{only} and definiteness. It extends the work on definiteness done by \citeauthor{cb2015} (\citeyear{cb2012a}, \citeyear{cb2012b}, \citeyear{cb2015}) and tests some of their predictions against Russian. I show that anti-uniqueness effects occur in predicative constructions in Russian, but I fail to confirm the existence of argumental anti-uniqueness effects. I also argue that \textit{edinstvennyj} `(the) only' resists indeterminate interpretation.
+This thesis draft reviews several issues related to DP-internal \textit{only} and definiteness. It extends the work on definiteness done by \citet{cb2015, cb2012a, cb2012b} and tests some of their predictions against Russian. I show that anti-uniqueness effects occur in predicative constructions in Russian, but I fail to confirm the existence of argumental anti-uniqueness effects. I also argue that \textit{edinstvennyj} `(the) only' resists indeterminate interpretation.
 \end{abstract}
 
 
@@ -186,7 +186,74 @@ Regardless, the possibility of \textit{on} in (\ref{only-goal-one-ru}) and (\ref
 
 The surprising lack of an anti-uniqueness effect in (\ref{only-goal-multiple-ru}) may be accounted for if the negation particle is actually inside the DP. In other words, the string \textit{ne edinstvennyj gol} is a DP headed by a null definite determiner, referring to the goal that Anna scored and entailing that other goals were scored as well. Since this DP has a referent, it is able to serve as the antecedent for the pronoun in the next sentence.
 
-\section{Indeterminate \textit{edinstvennyj} \label{sec:indet-e}}
+This account is not without issues. \textit{Edinstvennyj gol} presumably denotes a singleton set. The negation particle \textit{ne} normally encodes the set complement operation, which means that \textit{ne edinstvennyj gol} ought to denote a set of more than one element. But a non-singleton set should not be able to undergo the \textsc{Iota} shift to become determinate.
+
+The difficulty is not so much a matter of an inexpressive theory as a true peculiarity in the facts of the Russian language in this instance. It is quite unusual that \textit{ne edinstvennyj gol} `the not-only goal' can simultaneously entail a multiplicity of goals while denoting a single one. What would be required in the semantics is some way of picking out one of the multiplicity of goals to refer to.
+
+
+\section{Scalar implicature account of anti-uniqueness effects}
+The account of anti-uniqueness effects in \citet{cb2015, cb2012a} constitutes an expansive reimagining of definiteness in English. Three main ideas underlie their theory of the semantics of definiteness:
+
+\begin{itemize}
+	\item The definite and indefinite articles are identity functions, and the definite article carries a weak uniqueness presupposition.\footnote{Weak uniqueness is defined as uniqueness or non-existence, i.e. if uniqueness means $|P| = 1$ then weak uniqueness means $|P| \le 1$.}
+	\item The determinacy of a given expression is established by covert type-shifting operations.
+	\item Indeterminate interpretations of definites and determinate interpretations of indefinites are generally blocked by the principles of Maximize Presupposition and Type Simplicity.
+\end{itemize}
+
+However, anti-uniqueness effects are only ever observed with \textit{the only} phrases in the scope of negation in English, and their existence in Russian seems to be further limited to predicative contexts. It would make for a more perspicuous theory if the existence of anti-uniqueness effects could be attributed to some special properties of \textit{the only}, thus leaving the wider theory of definiteness unchanged.
+
+One candidate for such a theory is deriving anti-uniqueness from the scalar implicature that \textit{the only} induces. Consider (\ref{scott-pos}) and (\ref{scott-neg}).
+
+\begin{exe}
+	\ex \label{scott-pos} Scott is the only author of \textit{Waverley}.
+	\ex \label{scott-neg} Scott is not the only author of \textit{Waverley}.
+\end{exe}
+
+(\ref{scott-pos}) entails that the set denoted by \textit{author of Waverley} has a cardinality of exactly one. (\ref{scott-neg}) entails that the set has a cardinality greater than one. In terms of the $n$ authors scale that the two sentences induce, (\ref{scott-pos}) restricts the scale to a single point and (\ref{scott-neg}) flips it to contain all greater points.
+
+Note that the logical negation of $|\textsc{only author of Waverley}| = 1$ is
+$|\textsc{only author of Waverley}| \ne 1$, or equivalently $|\textsc{only author of Waverley}| = 0 \lor |\textsc{only author of Waverley}| > 1$. But (\ref{scott-neg}) is not compatible with the cardinality equaling zero, so the zero case must be excluded somehow.
+
+Here's how. Both (\ref{scott-pos}) and (\ref{scott-neg}) entail that Scott is an author of \textit{Waverley}, so that proposition must be a semantic presupposition. From this presupposition, it follows logically that the cardinality of the \textit{author of Waverley} set cannot be zero, since it must contain at least Scott. Thus, the proper scalar entailment is derived correctly after all.
+
+What a scalar implicature account of anti-uniqueness effects, and indeed any account that preserves the conventional theory of definiteness, would require is that \textit{the only} is a semantic atom rather than the composition of \textit{the} and \textit{only}. If \textit{the only P} is derived compositionally as \textit{the} and \textit{only P}, then by principle the entire phrase is a definite description, since it is headed by a definite article, and its lack of a uniqueness presupposition would truly be evidence that the definite article cannot categorically have a uniqueness presupposition. On the other hand, \textit{the only} is a semantic atom, then \textit{the only P} need not be considered a definite description under all circumstances. % TODO: More here?
+
+% TODO: Talk about only's other scalar properties
+
+
+\section{The semantics of \textit{edinstvennyj}}
+A related but somewhat separate issue is the actual semantic meaning of \textit{edinstvennyj}. There are several nominal modifiers in English besides DP-internal \textit{only} that have a similar exclusive meaning: \textit{sole}, \textit{single}, and \textit{one}. (\ref{osso}), for instance, has the same meaning regardless of the choice of adjective.
+
+\begin{exe}
+	\ex \label{osso} The (only/sole/single/one) person to come was Ahmed.
+\end{exe}
+
+However, the various words evince distinct semantic and syntactic properties in other circumstances. \citet{cb2012b} catalog the inventory of properties thoroughly. Their conclusions are summarized in the table below.\\
+
+\begin{tabular}{ l | l l l l l }
+	& indefinite article & superlative & plural & NPIs & DP negation \\
+	\hline
+	\textit{only} & no & no & yes & yes & no \\
+	\textit{sole} & yes & yes & yes & yes & yes \\
+	\textit{single} & yes & yes & no & marginal & yes \\
+	\textit{one} & no & marginal & no & yes & no \\
+\end{tabular}
+
+% Awkward way to force more space after the end of the table.
+\ \\
+
+The judgments in the table are shown by the sentences (\ref{osso-indef})-(\ref{osso-dp-neg}). In (\ref{osso-indef}), the exclusive adjectives are placed in a DP headed by an indefinite article. In (\ref{osso-super}), they combine with a superlative NP. In (\ref{osso-pl}), they combine with a plural NP. In (\ref{osso-npi}), they license or fail to license negative polarity items. In (\ref{osso-dp-neg}), they undergo DP negation.
+
+\begin{exe}
+	\ex \label{osso-indef} This company has a(n) (*only/sole/single/*one) director.
+	\ex \label{osso-super} The oil spill was the (*only/sole/single/?one) worst environmental disaster in the state's history.
+	\ex \label{osso-pl} They are the (only/sole/*single/*one) people we can trust.
+	\ex \label{osso-npi} The (only/sole/??single/one) pick-up truck he ever owned was a Chevrolet.
+	\ex \label{osso-dp-neg} Not a(n) (*only/sole/single/*one) person came.
+\end{exe}
+
+\subsection{Indeterminate \textit{edinstvennyj}}
+% TODO: Move this intro to the end and replace with more appropriate intro.
 \citet{cb2015} predict that indeterminate readings should be more widely available in article-less languages than in English. Preliminary evidence from Russian shows that NPs beginning with \textit{edinstvennyj} resist indeterminate interpretation. In (\ref{sole-director}), for instance, the preferred translation of the English sentence with the indefinite phrase \textit{a sole director} uses the regular cardinal number \textit{odin} `one' rather than \textit{edinstvennyj}, which is marginal.
 
 \begin{exe}
@@ -254,7 +321,7 @@ DP-internal \textit{only} cannot license NPIs outside of its DP:
 	\ex The only team that I had heard of (*ever) won the World Cup.
 \end{exe}
 
-The facts in Russian are more complicated. \textit{Chto-nibud'} `anything' is cited as an NPI by \citet{}, and it is licensed by \textit{tol'ko}:
+The facts in Russian are more complicated. \textit{Chto-nibud'} `anything' is cited as an NPI by \citet{russneg}, and it is licensed by \textit{tol'ko}:
 
 \begin{exe}
 	\ex \gll Tol'ko Boris chto-nibud' delaet.\\
@@ -288,7 +355,46 @@ However, \textit{edinstvennyj} cannot license \textit{kto-nibud'} in a position 
 
 In (\ref{nibud-out-of-dp}), \textit{kto-to}	is a positive polarity item that is subject to Principle C of the Binding Theory \citep{russneg}.\footnote{The morphemes \textit{to}, \textit{nibud'} and \textit{libo} are suffixes which may attach to a number of pronouns, including \textit{chto} `what' (\textit{chto-to}, \textit{chto-nibud'}, \textit{chto-libo}) and \textit{kto} `who' (\textit{kto-to}, \textit{kto-nibud'}, \textit{kto-libo}). Only the underlying pronoun takes case endings, hence forms like \textit{kogo-to}, the genitive and accusative declension of \textit{kto-to}.}
 
-The ungrammaticality of (\ref{nibud-out-of-dp}) suggests that, despite (\ref{nibud-no-polarity}), \textit{}
+The ungrammaticality of (\ref{nibud-out-of-dp}) suggests that, despite (\ref{nibud-no-polarity}), \textit{nibud'} phrases have some kind of polarity requirements that may not neatly fit the paradigm of positive versus negative polarity.
+
+In summary, \textit{edinstvennyj} licenses the \textit{libo} phrases, but it is not yet clear whether such phrases are negative polarity items or not.
+
+\subsection{Other properties of \textit{edinstvennyj}}
+The remaining properties of \textit{edinstvennyj} to be pinned down are its ability to combine with superlative NPs and plural NPs, and to undergo DP negation. (\ref{not-a-sole}) already showed that DP negation is impossible for \textit{edinstvennyj}. (\ref{plural-edin}) shows that \textit{edinstvennyj} may modify a plural NP.
+
+\begin{exe}
+	\ex \label{plural-edin} \gll Oni --- edinstvennye lyudi, kotorym ya doveryayu.\\
+	they {} only people which I trust\\
+	\glt `They are the only people that I trust.'
+\end{exe}
+
+The ungrammaticality of (\ref{super-edin}) demonstrates that \textit{edinstvennyj} cannot modify a superlative NP.
+
+\begin{exe}
+	\ex[*] { \label{super-edin} \gll
+		Eto edinstvennyj samyj vysokiy neboskryob v Chikago.\\
+		this only most tall skyscraper in Chicago\\
+		\glt Intended: `It is the single tallest skyscraper in Chicago.'
+	}
+\end{exe}
+
+\subsection{Summary}
+The relevant semantic and syntactic properties of \textit{edinstvennyj} and its potential counterparts are thus:\\
+
+\begin{tabular}{ l | l l l l l }
+	& indefinite article & superlative & plural & NPIs & DP negation \\
+	\hline
+	\textit{only} & no & no & yes & yes & no \\
+	\textit{sole} & yes & yes & yes & yes & yes \\
+	\textit{single} & yes & yes & no & marginal & yes \\
+	\textit{one} & no & marginal & no & yes & no \\
+	\textit{edinstvennyj} & no & no & yes & unclear & no \\
+\end{tabular}
+
+% Awkward way to force more space after the end of the table.
+\ \\
+
+The properties of \textit{edinstvennyj} are most similar to those of DP-internal \textit{only}, and indeed may be identical, at least within the matrix under consideration, if \textit{edinstvennyj} turns out to be an NPI-licenser. The near-identity of \textit{only} and \textit{edinstvennyj} in a range of circumstances adds support to my comparison between the two words with regards to anti-uniqueness effects.
 
 
 \section{Summary and further research \label{sec:conclusion}}
