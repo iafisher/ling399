@@ -10,7 +10,7 @@
 
 \title{DP-internal \textit{only} and definiteness in English and Russian}
 \author{Ian Fisher}
-\date{October 26, 2018}
+\date{October 29, 2018}
 
 \begin{document}
 \maketitle
@@ -21,7 +21,7 @@ This thesis draft reviews several issues related to DP-internal \textit{only} an
 \end{abstract}
 
 
-\section{Background}
+\section{Introduction}
 Most treatments of definite descriptions hold that they entail the uniqueness of the entity they refer to as either a presupposition or as an assertion. There exist definite descriptions, however, which not only do not require uniqueness but are in fact incompatible with it. \citet{cb2015} observe that the definite description \textit{the only author of Waverley} in (\ref{scott}) is just such an anti-unique definite: the sentence entails that \textit{Waverley} was written by multiple authors, and consequently there can be no individual who fits the description \textit{the only author of Waverley}.
 
 \begin{exe}
@@ -38,31 +38,56 @@ DP-internal \textit{only} in the scope of negation is capable of stripping defin
 
 The contrast between (\ref{scott}) and (\ref{the-author}) illustrates the surprising interaction of DP-internal \textit{only} and definiteness. The main thrust of this paper is to explore this interaction and its ramifications in Russian, and more broadly to account for the semantic properties of DP-internal \textit{only} in both English and Russian.
 
-Before continuing, some basic typological facts about Russian should be established. Per \citet{chierchia98}, NPs in Russian may denote either predicates (type $\langle e, t \rangle$) or entities (type $e$), the same typological classification as English. However, since Russian lacks articles, bare count nominals are permitted in argument positions, provided they undergo covert type-shifting to acquire definite or indefinite import \`{a} la \citet{partee86}. This analysis is quite similar to \citeauthor{cb2015}'s analysis of English, and as such an exploration of the relationship between definiteness and DP-internal \textit{only} in Russian should prove especially fruitful.
-
 \citeauthor{cb2015} distinguish between two related concepts: definiteness, a morphological feature which they argue signals a weak uniqueness presupposition in English; and determinacy, the property of denoting an individual (i.e., having type $e$). I adopt their terminology of ``determinate'' and ``definite'' for my analysis.
 
-The paper is organized as follows: section \ref{sec:anti-uniqueness} presents the evidence for anti-uniqueness effects in Russian. Section \ref{sec:scalar} sketches an alternative account to \citeauthor{cb2015}'s of anti-uniqueness effects. Section \ref{sec:which-edin} presents an inventory of \textit{edinstvennyj}'s properties in comparison with an array of similar words in English, and tests \citeauthor{cb2015}'s prediction that indeterminate readings should be more widely available in Russian. Section \ref{sec:conclusion} concludes the paper.
+The paper is organized as follows: section \ref{sec:anti-uniqueness-en} reviews \citeauthor{cb2015}'s account of anti-uniqueness effects in English. Section \ref{sec:anti-uniqueness-ru} discusses the distribution of anti-uniqueness effects in Russian. Section \ref{sec:scalar} sketches an alternative account to \citeauthor{cb2015}'s of anti-uniqueness effects. Section \ref{sec:which-edin} presents an inventory of \textit{edinstvennyj}'s properties in comparison with an array of similar words in English, and tests \citeauthor{cb2015}'s prediction that indeterminate readings should be more widely available in Russian. Section \ref{sec:conclusion} concludes the paper.
 
 % TODO: Write a footnote with my reservations about the term "adverbial only"
 
 
 
-\section{Anti-uniqueness effects \label{sec:anti-uniqueness}}
-\subsection{Anti-uniqueness effects in English}
-% TODO: Some duplicate material needs to be removed from the introduction
+\section{Anti-uniqueness effects in English \label{sec:anti-uniqueness-en}}
+Anti-uniqueness effects occur with two kinds of definites in English: predicative definites, as in (\ref{scott}), and argumental definites, as in (\ref{only-goal}).
 
-Anti-uniqueness effects should not be confused with \citegen{strawson50} observation that definite descriptions need not be universally unique. (\ref{table-books}), for instance, surely does not require that only a single table exists in the world.
+\begin{exe}
+	\exr{scott} Scott is not the author of \textit{Waverley}.
+	\ex \label{only-goal} Anna didn't score the only goal.
+\end{exe}
+
+The presence or absence of an anti-uniqueness effect in the argumental position can be diagnosed by the possibility of a pronoun in a subsequent sentence referring to the definite description---if the definite description indeed fails to denote an individual, than it should not be able to serve as the antecedent of a pronoun. The contrast between (\ref{the-goal}) and (\ref{only-goal-multiple}) thus testifies to the presence of an anti-uniqueness effect in (\ref{only-goal}).
+
+\begin{exe}
+	\ex \label{the-goal} Anna didn't score [ the goal ]_1. It_1 was an excellent strike.
+	\ex \label{only-goal-multiple} Anna didn't score [ the only goal ]_1. \#It_1 was an excellent strike.
+\end{exe}
+
+Note however that (\ref{only-goal}) is ambiguous between a reading where one goal was scored by someone other than Anna and a reading where multiple goals were scored, including one by Anna. Under the first reading in which one goal was scored, \textit{the only goal} does have a referent and therefore should be able to be a pronoun's antecedent, while it should not be under the second reading. (\ref{only-goal-ambig-one}) and (\ref{only-goal-ambig-multiple}) tease apart the two readings with additional context and validate the two predictions.
+
+\begin{exe}
+	\ex \label{only-goal-ambig-one} One-goal reading: Anna didn't score [ the only goal ]$_1$, Maria did. It$_1$ was an excellent strike.
+	\ex \label{only-goal-ambig-multiple} Multiple-goals reading: Anna didn't score [ the only goal ]$_1$, Maria also scored. \#It$_1$ was an excellent strike.
+\end{exe}
+
+The two readings correspond to two different scopes of negation. In the one-goal reading, negation takes wide scope over the entire VP \textit{score the only goal}. In the multiple-goals reading, negation takes narrow scope over the argument \textit{the only goal}, yielding an anti-uniqueness effect.
+
+Anti-uniqueness effects bear a superficial resemblance to \citegen{strawson50} observation that definite descriptions need not be universally unique. (\ref{table-books}), for instance, surely does not require that only a single table exists in the world.
 
 \begin{exe}
 	\ex \label{table-books} The table is covered with books.
 \end{exe}
 
-(\ref{table-books}) requires that \textit{the table} be unique within a certain context, though it is compatible with a universe with multiple tables. (\ref{scott}), by contrast, is inherently incompatible with a situation with a unique author of \textit{Waverley}.
+Instead, (\ref{table-books}) requires that \textit{the table} be unique within a certain context, though it is compatible with a universe with multiple tables. (\ref{scott}), by contrast, is inherently incompatible with a situation with a unique author of \textit{Waverley}.
 
 The difference, then, is between normal uses of definite descriptions, for which uniqueness is contextually limited, and anti-unique definite descriptions, for which uniqueness is outright forbidden.
 
-\subsection{Anti-uniqueness effects in Russian}
+% TODO: Discuss Coppock and Beaver's account, maybe
+
+
+
+\section{Anti-uniqueness effects in Russian \label{sec:anti-uniqueness-ru}}
+Per \citet{chierchia98}, NPs in Russian may denote either predicates (type $\langle e, t \rangle$) or entities (type $e$), the same typological classification as English. However, since Russian lacks articles, bare count nominals are permitted in argument positions, provided they undergo covert type-shifting to acquire definite or indefinite import \`{a} la \citet{partee86}. This analysis is quite similar to \citeauthor{cb2015}'s analysis of English, and as such an exploration of the distribution of anti-uniqueness effects in Russian should prove fruitful to understanding them in English.
+
+\subsection{Predicative anti-uniqueness in Russian}
 \citeauthor{cb2015}'s first example of an anti-uniqueness effect was the predicative construction in (\ref{scott}). Definite descriptions can be predicative in Russian, as (\ref{pred-def}) shows.
 
 \begin{exe}
@@ -89,17 +114,14 @@ It has therefore been established that definite descriptions can be predicates i
 
 (\ref{tolstoy}) has the same meaning as its English translation. It presupposes that Tolstoy is an author of \textit{War and Peace} and entails that one or more others are also authors. Therefore, \textit{edinstvennyj avtor Vojny i mira} `the only author of \textit{War and Peace}' fails to refer to an individual, just as in English, and an anti-uniqueness effect arises.
 
-Anti-uniqueness effects are evident with argumental as well as predicative definites in English. For example, (\ref{only-goal-multiple}) is only compatible (on the most prominent reading) with a situation in which multiple goals were scored, including one scored by Anna. In such a situation, the description \textit{the only goal} does not refer to anything, since the existence of multiple goals precludes any one goal being denoted as the only goal.
-
-The second sentence of (\ref{the-goal})-(\ref{only-goal-one}) is a diagnosis for anti-uniqueness effects: if a definite description does not refer, it should not be able to serve as the antecedent of a pronoun. Therefore, when \textit{It was an excellent strike} is not a felicitous continuation, an anti-uniqueness effect must be operative in the initial sentence. (\ref{the-goal}) shows that regular definite descriptions do not exhibit anti-uniqueness effects, as expected.
+\subsection{Argumental anti-uniqueness in Russian}
+A prototypical example of an argumental anti-uniqueness effect was (\ref{only-goal}), repeated below.
 
 \begin{exe}
-	\ex \label{the-goal} Anna didn't score the goal. It was an excellent strike.
-	\ex \label{only-goal-multiple} Anna didn't score the only goal. *It was an excellent strike. (multiple goals)
-	\ex \label{only-goal-one} Anna didn't score the only goal. It was an excellent strike. (one goal)
+	\ex Anna didn't score the only goal.
 \end{exe}
 
-Note however that the first sentence of (\ref{only-goal-multiple}) is ambiguous between negation taking narrow or wide scope. (\ref{only-goal-multiple}) is the narrow-scope reading, in which negation only applies to \textit{the only goal}, to mean approximately ``Anna scored not the only goal.'' A wide scope reading, in which negation applies to the entire verb phrase, is also available, meaning ``It wasn't Anna that scored the only goal.'' This reading, shown in (\ref{only-goal-one}), requires a situation in which one goal was scored (by someone other than Anna), which means that anti-uniqueness should not be in force since there is indeed an \textit{only goal}. As predicted, the second sentence in (\ref{only-goal-one}) is grammatical under the wide-scope reading. The felicity of (\ref{only-goal-one}) becomes more apparent when one appends ``Maria did'' to the first sentence, to force wide scope.
+In section \ref{sec:anti-uniqueness-en} it was shown that (\ref{only-goal}) is ambiguous between two readings, one evincing an anti-uniqueness effect and the other not.
 
 In Russian, the two ambiguous readings of the English sentence correspond to two distinct sentences that differ as to the placement of the negation particle \textit{ne}. In (\ref{only-goal-one-ru}), the negation particle precedes the VP and thus takes wide scope, yielding the reading under which a single goal was scored. As expected, the continuation \textit{On byl otlichnyj udar} `It was an excellent strike' is grammatical.
 
@@ -189,7 +211,7 @@ It is conceivable that there is some division of semantic meaning between presup
 	\ex[*] { \label{double-neg}
 		\gll Anna ne zabila ne edinstvennyj gol.\\
 		Anna not scored not only goal\\
-		\glt Intended: `Anna didn't score the not-only goal.'
+		\glt Intended: `Anna didn't score any of the goals.'
 	}
 \end{exe}
 
