@@ -88,6 +88,7 @@ Instead, (\ref{table-books}) requires that \textit{the table} be unique within a
 
 The difference, then, is between normal uses of definite descriptions, for which uniqueness is contextually limited, and anti-unique definite descriptions, for which uniqueness is outright forbidden.
 
+% TODO: Maybe talk about definites that fail to refer (e.g., "the King of France") as something distinct from anti-uniqueness effects
 % TODO: Discuss Coppock and Beaver's account, maybe
 
 
@@ -276,7 +277,6 @@ Consider (\ref{scott-pos}) and (\ref{scott-neg}).
 	\item etc.
 \end{itemize}
 
-
 In terms of this $n$ authors scale, (\ref{scott-pos}) restricts the scale to a single point and (\ref{scott-neg}) flips it to contain all greater points.
 
 Note that the logical negation of $|\textsc{only author of Waverley}| = 1$ is
@@ -409,23 +409,7 @@ DP-internal \textit{only} cannot license NPIs outside of its DP:
 	\ex The only team that I had heard of (*ever) won the World Cup.
 \end{exe}
 
-The facts in Russian are more complicated. \textit{Chto-nibud'} `anything' is cited as an NPI by \citet{russneg}, and it is licensed by \textit{tol'ko}:
-
-\begin{exe}
-	\ex \gll Tol'ko Boris chto-nibud' delaet.\\
-	only Boris anything does\\
-	\glt `Only Boris is doing anything.'
-\end{exe}
-
-However, it is also licensed without \textit{tol'ko}, in a sentence in which \textit{anybody} would be ungrammatical in English:
-
-\begin{exe}
-	\ex \label{nibud-no-polarity} \gll Boris chto-nibud' delaet.\\
-	Boris anything does\\
-	\glt `Boris is doing something.' % TODO: This might not be the best translation of the sentence.
-\end{exe}
-
-\textit{Edinstvennyj} seems to prefer \textit{kto-libo} to \textit{kto-nibud'} (both of which are conventionally translated as anybody). (\ref{libo-vs-nibud}) is better with \textit{kto-libo}, though not completely ungrammatical with \textit{kto-nibud'}.
+(\ref{libo-vs-nibud}) shows \textit{edinstvennyj} licensing two kinds of NPIs, \textit{kto-libo} \citep{pereltsvaig06} and \textit{kto-nibud'} \citep{russneg}.
 
 \begin{exe}
 	\ex \label{libo-vs-nibud} \gll Ivan vzyal edinstvennuju knigu, kotoruju (kto-libo / ?kto-nibud') khotel.\\
@@ -433,7 +417,7 @@ However, it is also licensed without \textit{tol'ko}, in a sentence in which \te
 	\glt `Ivan took the only book that anybody wanted.'
 \end{exe}
 
-However, \textit{edinstvennyj} cannot license \textit{kto-nibud'} in a position outside of its DP:
+\textit{edinstvennyj} cannot license \textit{kto-nibud'} in a position outside of its DP:
 
 \begin{exe}
 	\ex \label{nibud-out-of-dp} \gll Edinstvennyj uchitel' vybral (kogo-to / *kogo-nibud').\\
@@ -441,11 +425,46 @@ However, \textit{edinstvennyj} cannot license \textit{kto-nibud'} in a position 
 	\glt `The only teacher picked someone.'
 \end{exe}
 
-In (\ref{nibud-out-of-dp}), \textit{kto-to}	is a positive polarity item that is subject to Principle C of the Binding Theory \citep{russneg}.\footnote{The morphemes \textit{to}, \textit{nibud'} and \textit{libo} are suffixes which may attach to a number of pronouns, including \textit{chto} `what' (\textit{chto-to}, \textit{chto-nibud'}, \textit{chto-libo}) and \textit{kto} `who' (\textit{kto-to}, \textit{kto-nibud'}, \textit{kto-libo}). Only the underlying pronoun takes case endings, hence forms like \textit{kogo-to}, the genitive and accusative declension of \textit{kto-to}.}
+In (\ref{nibud-out-of-dp}), \textit{kto-to}	is a positive polarity item that is subject to Principle C of the Binding Theory \citep{russneg}.\footnote{The morphemes \textit{to}, \textit{nibud'} and \textit{libo} are affixes or clitics which may attach to a number of pronouns, including \textit{chto} `what' (\textit{chto-to}, \textit{chto-nibud'}, \textit{chto-libo}) and \textit{kto} `who' (\textit{kto-to}, \textit{kto-nibud'}, \textit{kto-libo}). Only the underlying pronoun takes case endings, hence forms like \textit{kogo-to}, the genitive and accusative declension of \textit{kto-to}.}
 
-The ungrammaticality of (\ref{nibud-out-of-dp}) suggests that, despite (\ref{nibud-no-polarity}), \textit{nibud'} phrases have some kind of polarity requirements that may not neatly fit the paradigm of positive versus negative polarity.
+The NPI status of \textit{nibud'}-items is a little unclear, as they are licensed, at least in some circumstances, in non-monotonic contexts like declarative sentences:\footnote{Russian speakers may find (\ref{nibud-decl}) more acceptable with additional context, such as \textit{Boris v laboratorii} `Boris is in the laboratory.'}
 
-In summary, \textit{edinstvennyj} licenses \textit{libo} phrases, but it is not yet clear whether such phrases are negative polarity items or not.
+\begin{exe}
+	\ex \label{nibud-decl} \gll Boris chto-nibud' delaet.\\
+	Boris anything does\\
+	\glt `Boris is doing something.' % TODO: May not be the most accurate gloss
+\end{exe}
+
+Nevertheless, the ability of \textit{edinstvennyj} to license \textit{libo}-items, clear examples of Russian NPIs, is sufficient to confirm its status as an NPI licenser.
+
+As a brief aside, it is worth considering whether DP-internal \textit{only} creates a downward entailment in the classical sense. A downward entailment holds when a predicate that is true for a superset is also necessarily also true for any subset. Sentential negation creates a downward entailment, as the entailment from (\ref{reptiles}) with the superset \textit{reptiles} to (\ref{snakes}) with the subset \textit{snakes} shows.
+
+\begin{exe}
+	\ex \label{reptiles} No reptiles give birth to live young.
+	\ex \label{snakes} No snakes give birth to live young.
+\end{exe}
+
+DP-internal \textit{only} only licenses NPIs within its DP, so that is the relevant position to look for a downward entailment. The initial evidence suggests that DP-internal \textit{only} does not create an downward entailment. (\ref{everest-29}) does not entail (\ref{everest-30}), although the set of mountains taller than 30,000 feet is clearly a subset of the set of mountains taller than 29,000 feet. (\ref{russian-book}) does not necessarily entail (\ref{gogol-book})---suppose the only book in the library written by an Russian was actually by Turgenev---even though Gogol is in the set of all Russians.
+
+\begin{exe}
+	\ex \label{everest-29} The only mountain greater than 29,000 feet tall is Everest.
+	\ex \label{everest-30} The only mountain greater than 30,000 feet tall is Everest.
+	\ex \label{russian-book} The only book in the library written by a Russian is already checked out.
+	\ex \label{gogol-book} The only book in the library written by Gogol is already checked out.
+\end{exe}
+
+However, I do not think that (\ref{everest-29})-(\ref{gogol-book}) constitute a knock-down argument against DP-internal \textit{only}'s downward monotonicity. The failure of the superset sentence to entail the subset sentence stems from the possibility of the definite description failing to refer. In other words, (\ref{everest-29}) does entail (\ref{everest-30}) and (\ref{russian-book}) does (\ref{gogol-book}), so long as the definite descriptions \textit{the only mountain greater than 30,000 feet} and \textit{the only book in the library that was written by Gogol} have referents. In other words, it is never possible for (\ref{everest-29}) to be true and (\ref{everest-30}) to be false. If (\ref{everest-29}) is true, then (\ref{everest-30}) is either true or undefined.
+
+Other downward-entailing operators do not carry an existence requirement: (\ref{reptiles}) entails (\ref{iguanas}) regardless of whether or not such a creature as a four-toed frilled iguana actually exists.
+
+\begin{exe}
+	\ex \label{iguanas} No four-toed frilled iguanas give birth to live young.
+\end{exe}
+
+The source of this discrepancy is of course the definite article (or the \textsc{Iota} shift, per \citeauthor{cb2015}), which causes the entire sentence to have an undefined truth value if its NP complement is not a singleton set.
+
+In short, DP-internal \textit{only} creates a downward entailment (though still subject to the uniqueness requirement of the definite article), and thus the NPI-licensing properties of \textit{only} and \textit{edinstvennyj} fit neatly into the classical paradigm.
+
 
 \subsection{Other properties of \textit{edinstvennyj}}
 The remaining properties of \textit{edinstvennyj} to be pinned down are its ability to combine with superlative NPs and plural NPs, and to undergo DP negation. (\ref{not-a-sole}) already showed that DP negation is impossible for \textit{edinstvennyj}. (\ref{plural-edin}) shows that \textit{edinstvennyj} may modify a plural NP.
@@ -472,17 +491,17 @@ The relevant semantic and syntactic properties of \textit{edinstvennyj} and its 
 \begin{tabular}{ l | l l l l l }
 	& indefinite article & superlative & plural & NPIs & DP negation \\
 	\hline
+	\textit{edinstvennyj} & no & no & yes & yes & no \\
 	\textit{only} & no & no & yes & yes & no \\
 	\textit{sole} & yes & yes & yes & yes & yes \\
 	\textit{single} & yes & yes & no & marginal & yes \\
 	\textit{one} & no & marginal & no & yes & no \\
-	\textit{edinstvennyj} & no & no & yes & unclear & no \\
 \end{tabular}
 
 % Awkward way to force more space below table.
 \ \\
 
-The properties of \textit{edinstvennyj} are most similar to those of DP-internal \textit{only}, and indeed may be identical, at least within the matrix under consideration, if \textit{edinstvennyj} turns out to be an NPI-licenser. The near-identity of \textit{only} and \textit{edinstvennyj} in a range of circumstances adds support to my comparison between the two words with regards to anti-uniqueness effects.
+The properties of \textit{edinstvennyj} are most similar to those of DP-internal \textit{only}, and indeed may be identical, at least within the matrix under consideration. The near-identity of \textit{only} and \textit{edinstvennyj} in a range of circumstances adds support to my comparison between the two words with regards to anti-uniqueness effects.
 
 
 
