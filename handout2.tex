@@ -13,36 +13,29 @@
 
 \noindent LING399 Presentation II at Haverford College, 9 November 2018.
 
-\section{My thesis}
-An analysis of some interesting semantic and syntactic properties of DP-internal \textit{only} in English and in Russian. In particular:
-
-\begin{itemize}
-	\item Anti-uniqueness effects \citep{cb2015}
-	\item Negative polarity item licensing
-\end{itemize}
-
-
 \section{Anti-uniqueness effects}
+From \citet{cb2015}:
+
 \begin{exe}
-	\ex Scott is not the only author of \textit{Waverley}.
 	\ex Anna didn't score the only goal.
 \end{exe}
 
-\noindent In Russian:
+\noindent In Russian (note: some speakers find such sentences ungrammatical):
 \begin{exe}
-	\ex \gll Anna ne zabila edinstvennyj gol.\\
-	Anna not scored only goal\\
-	\glt `Anna didn't score the only goal.' (one goal)
-	\ex \gll Anna zabila ne edinstvennyj gol.\\
-	Anna scored not only goal\\
-	\glt `Anna didn't score the only goal.' (multiple goals)
+	\ex \gll Anna zabila ne edinstvennyj gol. On byl otlichnyj udar.\\
+	Anna scored not only goal he was excellent strike\\
+	\glt `Anna didn't score the only goal. It [her goal] was an excellent strike.'
 \end{exe}
 
-\noindent Some speakers find these sentences ungrammatical.
+\noindent The puzzle: how can \textit{ne edinstvennyj gol} entail multiple goals, but refer to a single one?
+
+\begin{exe}
+	\ex $\exists x [ \textsc{Goal}(x) \land \textsc{Scored}(a, x) \land \forall y [ y \in \textsc{Alt}(x) \to \neg \textsc{Scored}(a, y)] ]$\\ where $a$ stands for \textit{Anna}.
+\end{exe}
 
 
 \section{DP-internal \textit{only} and NPIs}
-Downward-entailment (canonical environment for negative-polarity items):
+Downward entailment (canonical environment for negative polarity items):
 
 \begin{exe}
 	\ex $P(x)$ is a downward-entailing environment if $P(S)$ implies $P(S')$ for all subsets $S'$ of $S$.
@@ -57,13 +50,11 @@ Downward-entailment (canonical environment for negative-polarity items):
 	\glt `Ivan took the only book that anybody wanted.'
 \end{exe}
 
-\noindent Does DP-internal \textit{only} create a downward-entailing environment?
+\noindent Does DP-internal \textit{only} create a downward-entailing environment? (California has about 39 million inhabitants.)
 
 \begin{exe}
-	\ex The only mountain greater than 29,000 feet tall is Everest.
-	\ex The only mountain greater than 30,000 feet tall is Everest.
-	\ex The only book in the library written by a Russian is already checked out.
-	\ex The only book in the library written by Gogol is already checked out.
+	\ex The only state with more than 30 million inhabitants is California.
+	\ex The only state with more than 40 million inhabitants is California.
 \end{exe}
 
 \noindent Non-existence with other DE operators:
