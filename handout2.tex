@@ -1,10 +1,12 @@
 \documentclass{article}
 
+\usepackage[a4paper]{geometry}
+
 \usepackage{natbib}
 \bibliographystyle{linquiry2}
 \usepackage{gb4e}
 
-\title{DP-internal \textit{only} and definiteness in English and Russian}
+\title{DP-internal \textit{only} in English and Russian}
 \author{Ian Fisher}
 \date{}
 
@@ -27,21 +29,15 @@ From \citet{cb2015}:
 	\glt `Anna didn't score the only goal. It [her goal] was an excellent strike.'
 \end{exe}
 
-\noindent The puzzle: how can \textit{ne edinstvennyj gol} entail multiple goals, but refer to a single one?
+\noindent The puzzle: how can the sentence entail multiple goals, but refer to a single one?
 
 \begin{exe}
-	\ex $\exists x [ \textsc{Goal}(x) \land \textsc{Scored}(a, x) \land \forall y [ y \in \textsc{Alt}(x) \to \neg \textsc{Scored}(a, y)] ]$\\ where $a$ stands for \textit{Anna}.
+	\ex $\exists x [ \textsc{Goal}(x) \land \textsc{Scored}(a, x) \land \forall y [ y \in \textsc{Alt}(x) \to \neg \textsc{Scored}(a, y)] ]$\\ where $a$ stands for \textit{Anna} and $\textsc{Alt}(x)$ for the set of alternatives to $x$.
 \end{exe}
 
 
 \section{DP-internal \textit{only} and NPIs}
-Downward entailment (canonical environment for negative polarity items):
-
-\begin{exe}
-	\ex $P(x)$ is a downward-entailing environment if $P(S)$ implies $P(S')$ for all subsets $S'$ of $S$.
-\end{exe}
-
-\noindent DP-internal \textit{only} licenses NPIs:
+DP-internal \textit{only} licenses negative polarity items:
 
 \begin{exe}
 	\ex The only car he \textbf{ever} owned was a Subaru Legacy.
@@ -55,13 +51,6 @@ Downward entailment (canonical environment for negative polarity items):
 \begin{exe}
 	\ex The only state with more than 30 million inhabitants is California.
 	\ex The only state with more than 40 million inhabitants is California.
-\end{exe}
-
-\noindent Non-existence with other DE operators:
-
-\begin{exe}
-	\ex No reptiles give birth to live young.
-	\ex No four-toed frilled iguanas give birth to live young.
 \end{exe}
 
 \noindent Generalization: Downward entailment for DP-internal \textit{only} holds, subject to the existence presupposition of the definite article.
