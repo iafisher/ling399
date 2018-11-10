@@ -22,21 +22,24 @@ This thesis draft reviews several issues related to DP-internal \textit{only} an
 
 
 \section{Introduction}
-The use of a definite description is conventionally assumed to entail that the description is unique to the entity that it denotes. There exist definite descriptions, however, which not only do not require uniqueness but are in fact incompatible with it. \citet{cb2015} observe that \textit{the only author of Waverley} in (\ref{scott}) is just such an anti-unique definite: the sentence entails that \textit{Waverley} was written by multiple authors, and consequently there can be no individual who fits the description \textit{the only author of Waverley}.
+A definite description is conventionally assumed to existence and uniqueness. That is to say, an expression of the form \textit{the P} may only be used when the predicate \textit{P} has a unique satisfier in the domain of discourse. If \textit{P} has no satisfiers or more than one, then the use of \textit{the P} is not licensed.
+
+There exist apparent exceptions to this generalization, however. In particular, there is a class of ``anti-unique'' definites, discussed by \citet{cb2015}, which lack an existence entailment. (\ref{scott}) is an example. The use of the definite description \textit{the only author of Waverley} ought to require that there be a single individual with the ``only author of \textit{Waverley}'' property. But this is plainly not the case; in fact, the primary purpose of uttering (\ref{scott}) is to assert that there is no such individual.
 
 \begin{exe}
 	\ex \label{scott} Scott is not the only author of \textit{Waverley}.
 \end{exe}
 
-Observe that it is crucially the word \textit{only} which instigates the anti-uniqueness effect. When \textit{only} is removed, as in (\ref{the-author}), then \textit{the author of Waverley} retains its referential status and the sentence becomes a simple negation of the identity of Scott and the author of \textit{Waverley}.
+Observe that it is crucially the words \textit{only} and \textit{not} which instigate the anti-uniqueness effect. When either is removed, as in (\ref{scott-wo-only}) and (\ref{scott-wo-not}), then the definite description retains a unique referent.
 
 \begin{exe}
-	\ex \label{the-author} Scott is not the author of \textit{Waverley}.
+	\ex \label{scott-wo-only} Scott is not the author of \textit{Waverley}.
+	\ex \label{scott-wo-not} Scott is the only author of \textit{Waverley}.
 \end{exe}
 
-The contrast between (\ref{scott}) and (\ref{the-author}) illustrates the surprising interaction of DP-internal \textit{only}, negation and definiteness. The main thrust of this paper is to explore this interaction and its ramifications in Russian, and more broadly to account for the semantic properties of DP-internal \textit{only} in both English and Russian.
+The contrast between (\ref{scott}) and (\ref{scott-wo-only}-\ref{scott-wo-not}) illustrates the surprising interaction of DP-internal \textit{only}, negation and definiteness. The main thrust of this paper is to explore this interaction and its ramifications in Russian, and more broadly to account for the semantic properties of DP-internal \textit{only} in both English and Russian.
 
-In the following discussion several terms from \citet{cb2015} are used: ``definiteness'' in the special sense of a morphological feature which signals a weak uniqueness presupposition in English; ``determinacy,'' the property of denoting an individual (i.e., having type $e$); and ``anti-uniqueness effect,'' to refer to the phenomenon of a definite description lacking a uniqueness entailment, i.e. a definite which is indeterminate.
+In the following discussion several terms from \citet{cb2015} are used: ``definiteness'' in the restricted sense of a morphological feature, most commonly the definite article, which signals a weak uniqueness\footnote{Weak uniqueness is defined as uniqueness or non-existence, i.e. if uniqueness means $|P| = 1$ then weak uniqueness means $|P| \le 1$.} presupposition in English; ``determinacy,'' the property of denoting an individual (i.e., having type $e$); and ``anti-uniqueness effect,'' to refer to the phenomenon of a definite description lacking an existence\footnote{Despite the name, it is in fact the existence implication that anti-unique definites lack \citep[p. 385]{cb2015}.} entailment, i.e. a definite that is indeterminate.
 
 The paper is organized as follows: section \ref{sec:anti-uniqueness-en} reviews the distribution of anti-uniqueness effects in English. Section \ref{sec:anti-uniqueness-ru} discusses their distribution in Russian. Section \ref{sec:scalar} sketches an alternative account to \citeauthor{cb2015}'s of anti-uniqueness effects. Section \ref{sec:which-edin} presents an inventory of \textit{edinstvennyj}'s properties in comparison with an array of similar words in English, and tests \citeauthor{cb2015}'s prediction that indeterminate readings should be more widely available in Russian.
 
@@ -94,9 +97,15 @@ The difference, then, is between normal uses of definite descriptions, for which
 
 
 \section{Anti-uniqueness effects in Russian \label{sec:anti-uniqueness-ru}}
-Per \citet{chierchia98}, NPs in Russian may denote either predicates (type $\langle e, t \rangle$) or entities (type $e$), the same typological classification as English. However, since Russian lacks articles, bare count nominals are permitted in argument positions, provided they undergo covert type-shifting to acquire determinate or indeterminate import, using the \textsc{Iota} and \textsc{A} shifts proposed by \citet{partee86}.
+Per \citet{chierchia98}, NPs in Russian may denote either predicates (type $\langle e, t \rangle$) or entities (type $e$), the same typological classification as English. However, since Russian lacks articles, bare count nominals are permitted in argument positions, provided they undergo covert type-shifting to acquire determinate or indeterminate import, using the \textsc{Iota} and \textsc{A} shifts proposed by \citet{partee86}. (\ref{bare}) demonstrates this paradigm: both an indeterminate and a determinate reading are available for the bare nominal \textit{knigu} `book'. Syntactically, the determinate reading corresponds to an application of the covert \textsc{Iota} shift and the indeterminate reading to the \textsc{A} shift.
 
-The upshot is that definiteness in the limited sense of \citeauthor{cb2015} is absent from Russian---indeterminate NPs are morphologically indistinguishable from determinate ones. Nevertheless, the use of certain adjectives like DP-internal \textit{only} and superlatives may be taken as a proxy for definiteness since their semantics more or less preclude indeterminate import (and indeed it will be shown in section \ref{sec:which-edin} that DP-internal \textit{only} in Russian cannot be indeterminate).
+\begin{exe}
+	\ex \label{bare} \gll Ivan \v{c}itaet knigu.\\
+	Ivan reads book\\
+	\glt `Ivan is reading (a/the) book.'
+\end{exe}
+
+The upshot is that definiteness, in the limited sense of \citeauthor{cb2015} where it is a purely morphological feature distinct from the property of denoting an individual, is absent from Russian---indeterminate NPs are morphologically indistinguishable from determinate ones, unlike in English where determinacy is typically marked by the definite article. Nevertheless, the use of certain adjectives like DP-internal \textit{only} and superlatives may be taken as a proxy for definiteness since their semantics more or less preclude indeterminate import (and indeed it will be shown in section \ref{sec:which-edin} that DP-internal \textit{only} in Russian cannot be indeterminate).
 
 In what follows, I show that Russian evinces predicative but not argumental anti-uniqueness effects.
 
@@ -109,7 +118,7 @@ Definite descriptions can be predicative in Russian, as (\ref{pred-def}) shows.
 	\glt `Dmitri is tall, cute and (the smartest student in the whole university / Boris).'
 \end{exe}
 
-Assuming that (a) adjectives are of type $\langle e, t \rangle$ and proper names are of type $e$ in Russian, and (b) conjuncts must have the same semantic type, then the ability of a definite description in (\ref{pred-def}) to conjoin with an adjective, and the inability of a proper name to do so, indicates that definites can have type $\langle e, t \rangle$. The equivalent sentence without conjunction is grammatical (see (\ref{dmitri-boris})), so it is crucially the adjectival conjunction that renders the sentence with \textit{Boris} ungrammatical.\footnote{That is, the sentence is ungrammatical on an equative reading where \textit{Boris} has type $e$. It does have a grammatical reading where \textit{Boris} is taken to denote a set of properties associated with ``Boris-ness'', similarly to \textit{such-a} phrases in English: \begin{exe} \ex He's such a Boris.\end{exe} Russian speakers may find the reading more accessible with a name like \textit{Putin} that is more easily given a property reading. Since this property-denoting interpretation of \textit{Boris} plausibly has type $\langle e, t \rangle$, its grammaticality supports my assertion.} Note that the superlative \textit{samyj umnyj student} `smartest student' was used to force the determinate interpretation, since superlatives cannot be indeterminate but regular bare nominals can be.
+Assuming that (a) adjectives are of type $\langle e, t \rangle$ and proper names are of type $e$ in Russian, and (b) conjuncts must have the same semantic type, then the ability of a definite description in (\ref{pred-def}) to conjoin with an adjective, and the inability of a proper name to do so, indicates that definites can have type $\langle e, t \rangle$. The equivalent sentence without conjunction is grammatical (see (\ref{dmitri-boris})), so it is crucially the adjectival conjunction that renders the sentence with \textit{Boris} ungrammatical.\footnote{That is, the sentence is ungrammatical on an equative reading where \textit{Boris} has type $e$. It does have a grammatical reading where \textit{Boris} is taken to denote a set of properties associated with ``Boris-ness'', similarly to \textit{such-a} phrases in English: \begin{exe} \ex He's such a Boris.\end{exe} Russian speakers may find the reading more accessible with a name like \textit{Putin} that is more easily given a property reading. Since this property-denoting interpretation of \textit{Boris} plausibly has type $\langle e, t \rangle$, its grammaticality supports my assertion.} Note that the superlative \textit{samyj umnyj student} `smartest student' was used to force the determinate interpretation, since superlatives inherently cannot be indeterminate but regular bare nominals can be.
 
 \begin{exe}
 	\ex \label{dmitri-boris} \gll Dmitrij --- (samyj umnyj student vo vs\"{e}m universitete / Boris).\\
@@ -125,7 +134,7 @@ It has therefore been established that definite descriptions can be predicates i
 	\glt `Tolstoy is not the only author of \textit{War and Peace}.'
 \end{exe}
 
-(\ref{tolstoy}) has the same meaning as its English translation. It presupposes that Tolstoy is an author of \textit{War and Peace} and entails that one or more others are also authors. Therefore, \textit{edinstvennyj avtor Vojny i mira} `the only author of \textit{War and Peace}' fails to refer to an individual, just as in English, and an anti-uniqueness effect arises.
+(\ref{tolstoy}) has the same meaning as its English translation. It presupposes that Tolstoy is an author of \textit{War and Peace} (since (\ref{tolstoy}) without negation still entails that he is an author of \textit{War and Peace}) and asserts that one or more others are also authors. Therefore, \textit{edinstvennyj avtor Vojny i mira} `the only author of \textit{War and Peace}' fails to refer to an individual, just as in English, and an anti-uniqueness effect arises.
 
 \subsection{Argumental anti-uniqueness in Russian}
 A prototypical example of an argumental anti-uniqueness effect was (\ref{only-goal}), repeated below.
@@ -152,7 +161,7 @@ In (\ref{only-goal-multiple-ru}), the negation particle precedes the object and 
 	\glt `Anna didn't score the only goal. It was an excellent strike.' (multiple goals)
 \end{exe}
 
-A similar pattern emerges for a number of other verbs of creation. \textit{Pro\v{c}itat'} `to read' and \textit{prinesti} `to bring' compose with \textit{ne} and \textit{edinstvennyj} in the exact same way as \textit{zabit'} `to score' to yield two sentences corresponding to the ambiguous readings of a single English sentence, as (\ref{prochitat}) and (\ref{prinesti}) show. As with (\ref{only-goal-multiple-ru}), (\ref{prochitat}) and (\ref{prinesti}) surprisingly lack the anti-uniqueness effects that are present in their English counterparts.
+A similar pattern emerges for a number of other verbs of creation.\footnote{Following \citet{cb2015}, I use the term ``verb of creation'' to denote verbs for which the following entailment pattern holds: \begin{exe} \ex There are seven cakes. If Mary ( brings / \#tastes ) a cake, that will make eight. \end{exe} } \textit{Pro\v{c}itat'} `to give (a talk)' and \textit{prinesti} `to bring' compose with \textit{ne} and \textit{edinstvennyj} in the exact same way as \textit{zabit'} `to score' to yield two sentences corresponding to the ambiguous readings of a single English sentence, as (\ref{prochitat}) and (\ref{prinesti}) show. As with (\ref{only-goal-multiple-ru}), (\ref{prochitat}) and (\ref{prinesti}) surprisingly lack the anti-uniqueness effects that are present in their English counterparts.
 
 \begin{exe}
 	\ex \label{prochitat} \begin{xlist}
@@ -276,7 +285,7 @@ The two approaches I have proposed are not incompatible. It could be that the se
 The account of anti-uniqueness effects in \citet{cb2015, cb2012a} constitutes an expansive reimagining of definiteness in English. Three main ideas underlie their theory of the semantics of definiteness:
 
 \begin{itemize}
-	\item The definite and indefinite articles are identity functions, and the definite article carries a weak uniqueness presupposition.\footnote{Weak uniqueness is defined as uniqueness or non-existence, i.e. if uniqueness means $|P| = 1$ then weak uniqueness means $|P| \le 1$.}
+	\item The definite and indefinite articles are identity functions, and the definite article carries a weak uniqueness presupposition.
 	\item The determinacy of an expression is established by covert type-shifting.
 	\item Indeterminate interpretations of definites and determinate interpretations of indefinites are generally blocked by the principles of Maximize Presupposition and Type Simplicity.
 \end{itemize}
