@@ -1,0 +1,485 @@
+\documentclass{article}
+
+\usepackage{verbatim}
+\usepackage{natbib}
+\bibliographystyle{linquiry2}
+\usepackage{gb4e}
+
+% Cite an author, e.g. Davidson's (1967)
+\newcommand{\citegen}[1]{\citeauthor{#1}'s~(\citeyear{#1})}
+
+\title{DP-internal \textit{only} in English and Russian}
+\author{Ian Fisher}
+\date{November 21, 2018}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This thesis draft reviews several issues related to DP-internal \textit{only} and definiteness. It extends the work on definiteness done by \citet{cb2012a, cb2012b, cb2015} and tests some of their predictions against Russian. I show that anti-uniqueness effects occur in both predicative and argumental constructions in Russian. I propose that, contrary to \citet{cb2015}, DP-internal \textit{only} carries an existence presupposition and a uniqueness assertion, and that descriptions with DP-internal \textit{only} are not properly considered definite.
+\end{abstract}
+
+
+\section{Introduction \label{sec:intro}}
+A definite description is conventionally assumed to existence and uniqueness. That is, an expression of the form \textit{the P} may only be used when the predicate \textit{P} has a unique satisfier in the domain of discourse. If \textit{P} has no satisfiers or more than one, then the use of \textit{the P} is not licensed.
+
+There exist apparent exceptions to this generalization, however. In particular, there is a class of ``anti-unique'' definites, discussed by \citet{cb2015}, which lack an existence entailment. (\ref{scott}) is an example. The use of the definite description \textit{the only author of Waverley} ought to require that there be a single individual with the ``only author of \textit{Waverley}'' property. But this is plainly not the case; in fact, the primary purpose of uttering (\ref{scott}) is to assert that there is no such individual.
+
+\begin{exe}
+	\ex \label{scott} Scott is not the only author of \textit{Waverley}.
+\end{exe}
+
+Observe that it is crucially the words \textit{only} and \textit{not} which instigate the anti-uniqueness effect. When either is removed, as in (\ref{scott-wo-only}) and (\ref{scott-wo-not}), then the definite description retains a unique referent.
+
+\begin{exe}
+	\ex \label{scott-wo-only} Scott is not the author of \textit{Waverley}.
+	\ex \label{scott-wo-not} Scott is the only author of \textit{Waverley}.
+\end{exe}
+
+The contrast between (\ref{scott}) and (\ref{scott-wo-only}-\ref{scott-wo-not}) illustrates the surprising interaction of DP-internal \textit{only}, negation and definiteness. The main thrust of this paper is to explore this interaction and its ramifications in Russian, and to offer an alternative proposal to \citegen{cb2015} of the semantics of anti-uniqueness effects.
+
+The paper is organized as follows. Sections \ref{sec:anti-unique-en} and \ref{sec:anti-unique-ru} review the distribution of anti-uniqueness effects in English and Russian, respectively. Section \ref{sec:indet} discusses the possibility of DP-internal \textit{only} phrases with indeterminate readings. Section \ref{sec:exist-unique} argues for the existence presupposition and uniqueness assertion of DP-internal \textit{only}. Section \ref{sec:logical-form} presents the proposed logical form of DP-internal \textit{only}. Section \ref{sec:two-onlys} compares the DP-internal and DP-external uses of the word \textit{word}. Section \ref{sec:conclusion} concludes the paper.
+
+
+\section{Anti-uniqueness effects in English \label{sec:anti-unique-en}}
+Anti-uniqueness effects occur in English when a definite description containing DP-internal \textit{only} or another exclusive adjective (such as \textit{sole} or \textit{single}) is in the scope of negation.
+
+In the following discussion several terms from \citet{cb2015} are used: ``definiteness'' in the restricted sense of a morphological feature, most commonly the definite article, which signals a weak uniqueness\footnote{Weak uniqueness is defined as uniqueness or non-existence, i.e. if uniqueness means $|P| = 1$ then weak uniqueness means $|P| \le 1$.} presupposition in English; ``determinacy,'' the property of denoting an individual (i.e., having type $e$); and ``anti-uniqueness effect,'' to refer to the phenomenon of a definite description lacking an existence\footnote{Despite the name, it is in fact the existence implication that anti-unique definites lack \citep[p. 385]{cb2015}.} entailment, i.e. a definite that is indeterminate.
+
+\subsection{Predicative anti-uniqueness in English}
+(\ref{scott}), repeated below, is the canonical example of anti-uniqueness in the predicate position.
+
+\begin{exe}
+	\exr{scott} Scott is not the only author of \textit{Waverley}.
+\end{exe}
+
+Suppose a fictional context where the novel \textit{Waverley} was written by a committee comprising Scott, Macfarlane and Campbell, in which case (\ref{scott}) would be a true utterance.
+
+In such a context, the phrases \textit{author of Waverley} and \textit{only author of Waverley} denote the sets (\ref{def-author}) and (\ref{def-only-author}). In other words, \textit{author of Waverley} is the set of individuals who are authors of \textit{Waverley}, and \textit{only author of Waverley} is the set of individuals who are ``only authors'' of \textit{Waverley}. Since in this context there are by definition no ``only authors'', this set is empty.
+
+\begin{exe}
+	\ex \label{def-author} $\textit{author of Waverley} = \lbrace Scott, Macfarlane, Campbell \rbrace$
+	\ex \label{def-only-author} $\textit{only author of Waverley} = \emptyset$
+\end{exe}
+
+But if the set denoted by \textit{only author of Waverley} is empty, then what could \textit{the only author of Waverley} denote? In conventional theories of definiteness, the use of a phrase \textit{the P} is only possible if there is a single, unique \textit{P} \citep{horn-abbott-2012}, or in the terminology of sets, if \textit{P} denotes a singleton set.
+
+In particular, \citet{frege} and \citet{strawson50} have uniqueness as a presupposition for definite descriptions, \citet{russell} has it as an assertion, and \citet{horn-abbott-2012} have it as an implicature.
+
+All these accounts share uniqueness as an essential part of the meaning of the definite article. What is so surprising about the ``anti-uniqueness effects'' that (\ref{scott}) evinces is the absence, and in fact denial, of uniqueness in a definite description.
+
+\subsection{Argumental anti-uniqueness in English}
+Anti-uniqueness effects are possible with definite arguments as well as definite predicates.
+
+\begin{exe}
+	\ex \label{only-goal} Anna didn't score the only goal.
+\end{exe}
+
+A simple diagnostic is available to test the presence or absence of anti-uniqueness with an argumental definite. If the definite description indeed fails to denote an individual, then it should not be able to serve as the antecedent of a pronoun in a subsequent sentence. The contrast between (\ref{the-goal}) and (\ref{only-goal-multiple}) thus testifies to the presence of an anti-uniqueness effect in (\ref{only-goal}).
+
+\begin{exe}
+	\ex \label{the-goal} Anna didn't score [ the goal ]_1. It_1 was an excellent strike.
+	\ex \label{only-goal-multiple} Anna didn't score [ the only goal ]_1. \#It_1 was an excellent strike.
+\end{exe}
+
+Note that (\ref{only-goal}) is actually ambiguous between a reading where one goal was scored by someone other than Anna and a reading where multiple goals were scored, including one by Anna. Under the one-goal reading, \textit{the only goal} does have a referent and therefore should be able to be a pronoun's antecedent, while it should not be under the multiple-goals reading. (\ref{only-goal-ambig-one}) and (\ref{only-goal-ambig-multiple}) tease apart the two readings with additional context and validate the two predictions.
+
+\begin{exe}
+	\ex \label{only-goal-ambig-one} One-goal reading: Anna didn't score [ the only goal ]$_1$, Maria did. It$_1$ was an excellent strike.
+	\ex \label{only-goal-ambig-multiple} Multiple-goals reading: Anna didn't score [ the only goal ]$_1$, Maria also scored. \#It$_1$ was an excellent strike.
+\end{exe}
+
+The two readings correspond to two different scopes of negation. In the one-goal reading, negation takes wide scope over the entire VP \textit{score the only goal}. In the multiple-goals reading, negation takes narrow scope over the argument \textit{the only goal}, yielding an anti-uniqueness effect. The narrow scope of negation in (\ref{only-goal-ambig-multiple}) is evident in the fact that the verb \textit{score} is not interpreted as negated---Anna did score something, on this reading.
+
+Only verbs of creation can induce argumental anti-uniqueness effects in English. When \textit{see} is substituted for \textit{score}, as in (\ref{see-only-goal}), then the referential use of \textit{the only goal} is forced; (\ref{see-only-goal}) can only mean that there was a single goal.\footnote{The multiple-goals reading is still possible with heavy emphasis on \textit{only}, as in: \begin{exe} \ex Anna didn't see the ONLY goal. There was more than one. \end{exe} I have no explanation for this possibility.}
+
+\begin{exe}
+	\ex \label{see-only-goal} Anna didn't see the only goal.
+\end{exe}
+
+\subsection{\citegen{cb2015} theory of definiteness}
+Two approaches are possible to account for the absence of a uniqueness entailment in (\ref{scott}) and (\ref{only-goal}): to loosen the uniqueness requirement for all definite descriptions, or to declare that the phrases with DP-internal \textit{only} are not definites at all. \citeauthor{cb2015} adopt the former approach. In section \ref{sec:exist-unique} I will present a theory along the latter lines.
+
+The cornerstone of \citeauthor{cb2015}'s theory is that the definite and indefinite articles in English are identity functions on predicates in terms of assertive contents, and the definite article carries an additional weak uniqueness presupposition. A typical definite like \textit{the table} would be given the formula in (\ref{the-table}), where $\partial(|\textsc{Table} \le 1|)$ uses \citegen{beaver92} partial operator and should be read as ``presupposing that the set of tables has a cardinality of 0 or 1.''
+
+\begin{exe}
+	\ex \label{the-table} $\textit{the table} = \lambda x . [ \partial(|\textsc{Table}| \le 1) \land \textsc{Table}(x) ]$
+\end{exe}
+
+A consequence of \citeauthor{cb2015}'s definition of the definite article is that definite descriptions are of type $\langle e, t \rangle$. Of course, definite descriptions commonly appear in argument positions where they must have type $e$. To allow for this, \citeauthor{cb2015} propose that the covert type shifters \textsc{Iota} and \textsc{A} from \citet{partee86} apply in English to yield determinate and indeterminate readings of DPs.
+
+Of course, definites are always determinate, except in the case of anti-uniqueness effects, and indefinites are always indeterminate, so \citeauthor{cb2015} need an account of why \textsc{Iota} can never apply to indefinites, and \textsc{A} can only apply to anti-unique definites. They account for this with the principles of Maximize Presupposition and Type Simplicity. Informally, Maximize Presupposition states that if there are two possible words whose meanings are identical, then the one with the greater presupposition should be chosen. Per \citeauthor{cb2015}, the indefinite and definite article have the same meaning, but the definite article has an extra presupposition of weak uniqueness, so in a situation where weak uniqueness is in the common ground, the definite article must be chosen.
+
+Type Simplicity is the preference for simpler types, all else being equal. \textsc{Iota} has type $\lbrace et, e \rbrace$ while \textsc{A} has type $\lbrace et, \lbrace et, t \rbrace \rbrace$, so \textsc{Iota} would be preferred unless its licensing condition (uniqueness) is not met.
+
+Thus the principles of Maximize Presupposition and Type Simplicity ensure that definiteness and determinacy, and indefinteness and indeterminacy, are usually construed in English.
+
+In summary, \citeauthor{cb2015}'s theory of definiteness has the following components:
+
+\begin{itemize}
+	\item The definite and indefinite articles are identity functions. The definite article additionally carries a weak uniqueness presupposition.
+	\item Definite and indefinite are fundamentally predicative and have type $\lbrace e, t \rbrace$ before type-shifting.
+	\item DPs receive their (in)determinacy through the \textsc{Iota} and \textsc{A} covert type shifts.
+\end{itemize}
+
+\citegen{cb2015} theory of definiteness makes two concrete predictions with regards to Russian: that anti-uniqueness effects should be evident in at least the same positions as in English, and that DP-internal \textit{only} should permit indeterminate readings more freely than in English. The reason for these predictions is that Russian lacks articles and allows bare nominals in argument positions to be interpreted as either determinate or indeterminate. Without articles, Maximize Presupposition is no longer in play so in principle nothing should block the indeterminate or determinate readings of bare nominals, including those with DP-internal \textit{only}. The following two sections explore each of these predictions in turn.
+
+
+\section{Anti-uniqueness effects in Russian \label{sec:anti-unique-ru}}
+Anti-uniqueness effects are possible in both predicative and argumental definites in Russian, when DP-internal \textit{only} (pronounced as \textit{edinstvennyj} in Russian) is in the scope of negation, just as in English. While there is clear evidence of argumental anti-uniqueness, Russian speakers have mixed judgments on sentences with \textit{edinstvennyj} in the object position. In the idiolects of some spekaers, anti-uniqueness effects do not arise in sentences whose English counterparts do have them. Additionally, argumental anti-uniqueness effects are possible even with verbs of non-creation in Russian.
+
+\subsection{Predicative anti-uniqueness in Russian}
+Definite descriptions can be predicative in Russian, as (\ref{pred-def}) shows.
+
+\begin{exe}
+	\ex \label{pred-def} \gll Dmitrij --- vysokij, simpati\v{c}nyj, i (samyj umnyj student vo vs\"{e}m universitete / *Boris).\\
+	Dmitri {} tall cute and most smart student in all university {} Boris\\
+	\glt `Dmitri is tall, cute and (the smartest student in the whole university / Boris).'
+\end{exe}
+
+Assuming that (a) adjectives are of type $\langle e, t \rangle$ and proper names are of type $e$ in Russian, and (b) conjuncts must have the same semantic type, then the ability of a definite description in (\ref{pred-def}) to conjoin with an adjective, and the inability of a proper name to do so, indicates that definites can have type $\langle e, t \rangle$. The equivalent sentence without conjunction is grammatical (see (\ref{dmitri-boris})), so it is crucially the adjectival conjunction that renders the sentence with \textit{Boris} ungrammatical.\footnote{That is, the sentence is ungrammatical on an equative reading where \textit{Boris} has type $e$. It does have a grammatical reading where \textit{Boris} is taken to denote a set of properties associated with ``Boris-ness'', similarly to \textit{such-a} phrases in English: \begin{exe} \ex He's such a Boris.\end{exe} Russian speakers may find the reading more accessible with a name like \textit{Putin} that is more easily given a property reading. Since this property-denoting interpretation of \textit{Boris} plausibly has type $\langle e, t \rangle$, its grammaticality supports my assertion.} Note that the superlative \textit{samyj umnyj student} `smartest student' was used to force the determinate interpretation, since superlatives inherently cannot be indeterminate but regular bare nominals can be.
+
+\begin{exe}
+	\ex \label{dmitri-boris} \gll Dmitrij --- (samyj umnyj student vo vs\"{e}m universitete / Boris).\\
+	Dmitri {} most smart student in all university {} Boris\\
+	\glt `Dmitri is (the smartest student in the whole university / Boris).'
+\end{exe}
+
+It has therefore been established that definite descriptions can be predicates in Russian. Do Russian predicative definites exhibit anti-uniqueness effects? (\ref{tolstoy}) indicates that they do.
+
+\begin{exe}
+	\ex \label{tolstoy} \gll Tolstoj ne edinstvennyj avtor \textit{Vojny i mira}\\
+	Tolstoy not only author \textit{War and Peace}\\
+	\glt `Tolstoy is not the only author of \textit{War and Peace}.'
+\end{exe}
+
+(\ref{tolstoy}) has the same meaning as its English translation. It presupposes that Tolstoy is an author of \textit{War and Peace} (since (\ref{tolstoy}) without negation still entails that he is an author of \textit{War and Peace}) and asserts that one or more others are also authors. Therefore, \textit{edinstvennyj avtor Vojny i mira} `the only author of \textit{War and Peace}' fails to refer to an individual, just as in English, and an anti-uniqueness effect arises.
+
+\subsection{Argumental anti-uniqueness in Russian}
+% TODO
+
+\subsection{The interpretation of \textit{ne edinstvennyj gol}}
+How can it be that (\ref{only-goal-multiple-ru}) entails a multiplicity of goals and yet allows for a singular reference? The first step towards answering this question is to clarify the syntactic composition of \textit{ne edinstvennyj gol} `not (the) only goal.' The constituent negation particle \textit{ne} must either be outside the DP, as in (\ref{external-ne}), or internal to it, as in (\ref{internal-ne}).
+
+\begin{exe}
+	\ex \label{external-ne} Anna zabila ne [_{DP} edinstvennyj gol].
+	\ex \label{internal-ne} Anna zabila [_{DP} ne edinstvennyj gol].
+\end{exe}
+
+% TODO: What does the literature on constituent negation say?
+% TODO: In fact I think the facts might be easier to explain if ne is external to the DP.
+
+The presence of \textit{edinstvennyj} is crucial to the availability of constituent negation: (\ref{ne-no-edin}), the same sentence without \textit{edinstvennyj}, is ungrammatical.
+
+\begin{exe}
+	\ex[*] { \label{ne-no-edin}
+		\gll Anna zabila ne gol.\\
+		Anna scored not goal\\
+	}
+\end{exe}
+
+The meaning of (\ref{only-goal-multiple-ru}) indicates that \textit{edinstvennyj} is being negated, since \textit{edinstvennyj} entails singularity while the matrix sentence entails multiplicity. It is not obvious how this semantic relationship and the ungrammaticality of (\ref{ne-no-edin}) could be explained if \textit{ne} where external to the DP. It would appear that the syntactic and semantic properties of \textit{ne edinstvennyj gol} are most easily explained if \textit{ne} and \textit{edinstvennyj} compose directly, implying that \textit{ne} must be internal to the DP since otherwise the phonologically null head of DP would intervene between the two words.
+
+In that case, it must be the DP \textit{ne edinstvennyj gol} that refers to the goal that Anna scored, out of the multiple goals that were scored.
+
+This account raises a serious issue. \textit{Edinstvennyj gol} presumably denotes a singleton set. The negation particle \textit{ne} normally functions as the set complement operation, which means that \textit{ne edinstvennyj gol} ought to denote the complement of a singleton set, which should have more than one element. But a set with more than one element should not be able to be interpreted as determinate.
+
+The difficulty is not so much a matter of an inexpressive theory as a true peculiarity in the facts of the Russian language in this instance. It is quite unusual that \textit{ne edinstvennyj gol} `the not-only goal' can simultaneously entail a multiplicity of goals while denoting a single one.
+
+I suggest two approaches: one which makes use of a selection operation on sets to pick out a singular referent, and one which postulates a multiplicity-singularity division between presupposition and assertion.
+
+What would be required in the semantics to model this peculiarity is some operation to pick out one of the multiplicity of goals. This selection operation, which would extract a singular referent from a multiplicity, must be constrained by the form of the rest of the sentence: \textit{on} (or \textit{\`{e}to}  as the case may be) in (\ref{only-goal-multiple-ru}) may not refer to just any goal that was scored, but specifically the goal that Anna scored.
+
+The idea of a phrase yielding an antecedent other than the set it denotes is not unprecedented in the literature: complement anaphora are just such a phenomenon. A complement anaphor is a pronoun that has as its antecedent the complement of some set previously denoted \citep{nouwen03, schwarz09}. In (\ref{kennedy}), the antecedent of \textit{they} in the second sentence is the complement of \textit{few congressmen}, i.e. few congressmen admire Kennedy so the majority of them think he is incompetent.
+
+\begin{exe}
+	\ex \label{kennedy} Few congressmen admire Kennedy. They think he's incompetent.
+\end{exe}
+
+Complement anaphora illustrate that the antecedent of a pronoun need not always be explicitly present in the semantics, as long as it can be derived from some entity that is present. Complement anaphora involve the set complement relationship; the data from Russian suggests that some individual-selection operation on sets may also be available.
+
+The second possibility is that there is some division of semantic meaning between presupposition and assertion which retains the multiplicity entailment while allowing \textit{ne edinstvennyj gol} to refer to a single goal. That is, the multiplicity entailment would be confined to the presupposition, and the assertive content would therefore contain only a reference to a singular goal. Unfortunately, the presuppositive component of (\ref{only-goal-multiple-ru}) cannot be isolated by negation, because the negated version of the sentence is independently ungrammatical:\footnote{Note that (\ref{only-goal-multiple-ru}) is an affirmative sentence, as the negation particle \textit{ne} does not have sentential scope.}
+
+\begin{exe}
+	\ex[*] { \label{double-neg}
+		\gll Anna ne zabila ne edinstvennyj gol.\\
+		Anna not scored not only goal\\
+		\glt Intended: `Anna didn't score any of the goals.'
+	}
+\end{exe}
+
+The presumed meaning of (\ref{double-neg}) would be, as the English gloss suggests, that multiple goals were scored, and Anna didn't score any of them. In that case, the presupposition and assertion of (\ref{only-goal-multiple-ru}) would be as follows:
+
+\begin{exe}
+	\ex Anna zabila ne edinstvennyj gol. \begin{xlist}
+		\ex Presupposition: Multiple goals were scored.
+		\ex Assertion: Anna scored a goal.
+	\end{xlist}
+\end{exe}
+
+It would seem then that the reference of \textit{ne edinstvennyj gol} is relative to the assertion, while the multiplicity entailment is actually a presupposition.
+
+The two approaches I have proposed are not incompatible. It could be that the set selection operation is sensitive to the assertion-presupposition distinction. In any case, I hope to have made the ability of \textit{ne edinstvennyj gol} to imply multiple goals but denote a single one a little less puzzling.
+
+
+\section{Indeterminate \textit{only} \label{sec:indet}}
+Recall from section \ref{sec:anti-unique-en} that the absence of a definite article in Russian should allow indeterminate readings for DP-internal \textit{only} to be more widely available, because the principle of Maximize Presupposition associated with the weak uniqueness presupposition of the definite article in English does not apply to generally block indeterminate readings.
+
+Russian lacks an indefinite article, but instances where English uses an indefinite article with the exclusive adjectives listed above generally cannot be translated with \textit{edinstvennyj} in Russian. In (\ref{sole-director}), for instance, the preferred translation of the English sentence with the indefinite phrase \textit{a sole director} uses the regular cardinal number \textit{odin} `one' rather than \textit{edinstvennyj}, which is marginal.
+
+\begin{exe}
+	\ex \label{sole-director} \gll U \`{e}toj kompanii --- (odin/??edinstvennyj) direktor.\\
+	At this company {} (one/only) director\\
+	\glt `This company has a sole director.'
+\end{exe}
+
+In (\ref{not-a-sole}), another example of indefinite \textit{sole} in English, the translation with \textit{edinstvennyj} is outright ungrammatical. \textit{Odin} must be used.
+
+\begin{exe}
+	\ex \label{not-a-sole} \gll Ni (odin/*edinstvennyj) \v{c}elovek ne pri\v{s}\"{e}l.\\
+	Not one/only person not came\\
+	\glt `Not a sole person came.'\footnote{Russian \textit{ni} is a negative concordance particle in this case, rather than double negation.}
+\end{exe}
+
+(\ref{sole-director}) and (\ref{not-a-sole}) indicate that indeterminate readings for \textit{edinstvennyj} are dispreferred if not outright impossible. There are at least two exceptions to this generalization, however. The first is that an indeterminate reading for \textit{edinstvennyj} can be achieved in the compound expression \textit{odin-edinstvennyj}:
+
+\begin{exe}
+	\ex \label{odin-edinstvennyj} \gll Vra\v{c}i rekomendovali odin-edinstvennyj podxod.\\
+	doctors recommended one-only approach\\
+	`The doctors recommended one single approach.'
+\end{exe}
+
+The second is that \textit{edinstvennyj} can combine with \textit{reb\"{e}nok} `child' to mean `an only child' (i.e., a child with no siblings):
+
+\begin{exe}
+	\ex \label{only-child-ru} Marija --- edinstvennyj reb\"{e}nok.\\
+	Maria {} only child
+	\glt `Maria is an only child.'\footnote{As is generally the case with bare nominals in Russian, \textit{edinstvennyj reb\"{e}nok} also has a determinate reading, meaning `Maria is the only child.'}
+\end{exe}
+
+It is consistent with the other evidence to conclude that the source of the indeterminate import of the NP in (\ref{odin-edinstvennyj}) is the numeral \textit{odin} rather than \textit{edinstvennyj}, so (\ref{odin-edinstvennyj}) is not a true counterexample.
+
+(\ref{only-child-ru}) is more problematic, as there is no other candidate for licensing the indeterminate reading. However, it is also true that DP-internal \textit{only} cannot generally be indeterminate in English:
+
+% TODO: Note though that 'edinstvennyj rebyonok' is only indeterminate insofar as other predicative DPs are indeterminate.
+
+\begin{exe}
+	\ex Examples (32)-(34) from \citet{cb2012a} \begin{xlist}
+		\ex If the business is owned by a(n) sole/*only owner, only the owner is eligible to be the managing officer.
+		\ex This company has a(n) sole/*only director.
+		\ex There was a(n) sole/*only piece of cake left.
+	\end{xlist}
+\end{exe}
+
+In English, \textit{only} can be indeterminate only when it combines with the noun \textit{child} (and derived nouns like \textit{grandchild}). (\ref{sole-director}) shows that it is the same case in Russian. Since DP-internal \textit{only} does not productively allow indeterminate readings, \textit{an only child} may be considered idiomatic in both languages and not indicative of the general properties of DP-internal \textit{only}.\footnote{It is nonetheless curious that the same idiom should surface in both languages. I have no comment on this coincidence at the moment.}
+
+Thus, despite the two objections, the generalization remains that \textit{edinstvennyj} does not independently allow an indeterminate reading, contrary to the predictions that \citet{cb2015} make in their conclusion about languages lacking articles.
+
+
+\section{Existence and uniqueness entailments \label{sec:exist-unique}}
+% TODO: Critique of C+B (2015)
+
+\subsection{Existence presupposition}
+The existence presupposition of DP-internal \textit{only}
+
+\begin{exe}
+	\ex Scott is the only author of \textit{Waverley}.
+		\begin{xlist}
+			\ex Scott is an author of \textit{Waverley}.
+			\ex There are no other authors of \textit{Waverley}.
+		\end{xlist}
+	\ex Scott is not the only author of \textit{Waverley}.
+		\begin{xlist}
+			\ex Scott is an author of \textit{Waverley}.
+			\ex There are other authors of \textit{Waverley}.
+		\end{xlist}
+\end{exe}
+
+\subsection{Uniqueness assertion}
+
+\begin{exe}
+	\ex Is is true that John lives in the house with a green roof? \\
+	    - No, he lives next door. \\
+	    - \#No, there are two houses with a green roof.
+	\ex Is is true that John lives in the only house with a green roof? \\
+	    - No, he lives next door. \\
+	    - No, there are two houses with a green roof.
+\end{exe}
+
+\begin{exe}
+	\ex \#He's not the ambassador to Spain---there are two.
+	\ex He's not the only ambassador to Spain---there are two.
+\end{exe}
+
+\subsection{Contribution of the definite article}
+If DP-internal \textit{only} already carries existence and uniqueness entailments, what contribution does the definite article make in phrases of the form \textit{the only X}?
+
+In fact, the existence presupposition and uniqueness assertion are already presented in \citegen{cb2015} proposed logical form for \textit{only}, given below.
+
+\begin{exe}
+	\ex \textit{only}: $ \lambda P . \lambda x . [ \partial(P(x)) \land \forall y [ x \ne y \to \neg P(y) ] ] $
+\end{exe}
+
+\citeauthor{cb2015} use the partial operator $\partial$ to indicate the presupposed content. Notice that presupposing $P(x)$ amounts to presupposing existence, and that the second conjunct is an assertion of the uniqueness of $x$ relative to the predicate $P$.
+
+Where this proposal differs from \citegen{cb2015} is in the role of the definite article.
+
+
+\section{The semantics of \textit{edinstvennyj} \label{sec:which-edin}}
+The preceding discussion has more or less assumed that \textit{edinstvennyj} in Russian corresponds to DP-internal \textit{only} in English. In this section, I wish to flesh out that assumption by comparing \textit{edinstvennyj} with a number of exclusive nominal modifiers in English. There are several with a similar meaning, in addition to \textit{only}: \textit{sole}, \textit{single}, and \textit{one}. (\ref{osso}), for instance, has the same meaning regardless of the choice of adjective.
+
+\begin{exe}
+	\ex \label{osso} The (only/sole/single/one) person to come was Ahmed.
+\end{exe}
+
+However, the various words evince distinct semantic and syntactic properties in other circumstances. \citet{cb2012b} catalog the inventory of properties thoroughly. Their conclusions are summarized in the table below.\\
+
+\begin{tabular}{ l | l l l l l }
+	& indeterminacy & superlative & plural & NPIs & DP negation \\
+	\hline
+	\textit{only} & no & no & yes & yes & no \\
+	\textit{sole} & yes & yes & yes & yes & yes \\
+	\textit{single} & yes & yes & no & marginal & yes \\
+	\textit{one} & no & marginal & no & yes & no \\
+\end{tabular}
+
+% Awkward way to force more space below table.
+\ \\
+
+The judgments in the table are shown by the sentences (\ref{osso-indef})-(\ref{osso-dp-neg}). In (\ref{osso-indef}), the exclusive adjectives are placed in a DP headed by an indefinite article. In (\ref{osso-super}), they combine with a superlative NP. In (\ref{osso-pl}), they combine with a plural NP. In (\ref{osso-npi}), they license or fail to license negative polarity items. In (\ref{osso-dp-neg}), they undergo DP negation.
+
+\begin{exe}
+	\ex \label{osso-indef} This company has a(n) (*only/sole/single/*one) director.
+	\ex \label{osso-super} The oil spill was the (*only/sole/single/?one) worst environmental disaster in the state's history.
+	\ex \label{osso-pl} They are the (only/sole/*single/*one) people we can trust.
+	\ex \label{osso-npi} The (only/sole/??single/one) pick-up truck he ever owned was a Chevrolet.
+	\ex \label{osso-dp-neg} Not a(n) (*only/sole/single/*one) person came.
+\end{exe}
+
+The remainder of this section will test the properties of \textit{edinstvennyj} against this matrix.
+
+\subsection{Licensing of negative polarity items}
+Both adverbial and DP-internal \textit{only} license negative polarity items in English:
+
+\begin{exe}
+	\ex *(Only) Khalid \textbf{ever} goes to the movies.
+	\ex The *(only) poem I \textbf{ever} read in high school was ``The Raven.''
+\end{exe}
+
+DP-internal \textit{only} cannot license NPIs outside of its DP:
+
+\begin{exe}
+	\ex[*] {The only team that I had heard of \textbf{ever} won the World Cup.}
+\end{exe}
+
+(\ref{libo-vs-nibud}) shows \textit{edinstvennyj} licensing two kinds of NPIs, \textit{kto-libo} \citep{pereltsvaig06} and \textit{kto-nibud'} \citep{russneg}.
+
+\begin{exe}
+	\ex \label{libo-vs-nibud} \gll Ivan vzjal edinstvennuju knigu, kotoruju (kto-libo / ?kto-nibud') xotel.\\
+	Ivan took only book which anybody {} anybody wanted\\
+	\glt `Ivan took the only book that anybody wanted.'
+\end{exe}
+
+\textit{Edinstvennyj} cannot license \textit{kto-nibud'} outside of its DP:
+
+\begin{exe}
+	\ex \label{nibud-out-of-dp} \gll Edinstvennyj u\v{c}itel' vybral (kogo-to / *kogo-nibud').\\
+	only teacher picked someone {} anyone\\
+	\glt `The only teacher picked someone.'
+\end{exe}
+
+In (\ref{nibud-out-of-dp}), \textit{kto-to}	is a positive polarity item that is subject to Principle C of the Binding Theory \citep{russneg}.\footnote{The morphemes \textit{to}, \textit{nibud'} and \textit{libo} are affixes or clitics which may attach to a number of pronouns, including \textit{\v{c}to} `what' (\textit{\v{c}to-to}, \textit{\v{c}to-nibud'}, \textit{\v{c}to-libo}) and \textit{kto} `who' (\textit{kto-to}, \textit{kto-nibud'}, \textit{kto-libo}). Only the underlying pronoun takes case endings, hence forms like \textit{kogo-to}, the genitive and accusative declension of \textit{kto-to}.}
+
+The NPI status of \textit{nibud'}-items is a little unclear, as they are licensed, at least in some circumstances, in non-monotonic contexts like declarative sentences:\footnote{Russian speakers may find (\ref{nibud-decl}) more acceptable with additional context, such as \textit{Boris v laboratorii} `Boris is in the laboratory.'}
+
+\begin{exe}
+	\ex \label{nibud-decl} \gll Boris \v{c}to-nibud' delaet.\\
+	Boris anything does\\
+	\glt `Boris is doing something.' % TODO: May not be the most accurate gloss
+\end{exe}
+
+Nevertheless, the ability of \textit{edinstvennyj} to license \textit{libo}-items, clear examples of Russian NPIs, is sufficient to confirm its status as an NPI licenser.
+
+\subsection{Other properties of \textit{edinstvennyj}}
+The remaining properties of \textit{edinstvennyj} to be pinned down are its ability to combine with superlative NPs and plural NPs, and to undergo DP negation. (\ref{not-a-sole}) already showed that DP negation is impossible for \textit{edinstvennyj}. (\ref{plural-edin}) shows that \textit{edinstvennyj} may modify a plural NP.
+
+\begin{exe}
+	\ex \label{plural-edin} \gll Oni --- edinstvennye ljudi, kotorym ja doverjaju.\\
+	they {} only people which I trust\\
+	\glt `They are the only people that I trust.'
+\end{exe}
+
+The ungrammaticality of (\ref{super-edin}) demonstrates that \textit{edinstvennyj} cannot modify a superlative NP.
+
+\begin{exe}
+	\ex[*] { \label{super-edin} \gll
+		\`{E}to edinstvennyj samyj vysokiy neboskr\"{e}b v \v{C}ikago.\\
+		this only most tall skyscraper in Chicago\\
+		\glt Intended: `It is the single tallest skyscraper in Chicago.'
+	}
+\end{exe}
+
+Section \ref{sec:indet} showed that \textit{edinstvennyj} permits indeterminate readings.
+
+\subsection{Summary}
+The relevant semantic and syntactic properties of \textit{edinstvennyj} and its potential counterparts are thus:\\
+
+\begin{tabular}{ l | l l l l l }
+	& indeterminacy & superlative & plural & NPIs & DP negation \\
+	\hline
+	\textit{edinstvennyj} & yes & no & yes & yes & no \\
+	\textit{only} & no & no & yes & yes & no \\
+	\textit{sole} & yes & yes & yes & yes & yes \\
+	\textit{single} & yes & yes & no & marginal & yes \\
+	\textit{one} & no & marginal & no & yes & no \\
+\end{tabular}
+
+% Awkward way to force more space below table.
+\ \\
+
+The properties of \textit{edinstvennyj} are most similar to those of DP-internal \textit{only}, with the exception of the greater possibility of an indeterminate reading of \textit{edinstvennyj} compared with English \textit{only}. The similarity of \textit{only} and \textit{edinstvennyj} in a range of circumstances supports my comparison between the two words with regards to anti-uniqueness effects.
+
+
+\section{DP-internal \textit{only} and adverbial \textit{only} \label{sec:two-onlys}}
+
+\subsection{Alternative sets}
+
+\subsection{Negative polarity items and downward entailment}
+As a brief aside, it is worth considering whether DP-internal \textit{only} licenses a downward entailment as NPI licensers are conventionally assumed to do. A downward entailment holds when a predicate that is true for a superset is also necessarily true for any subset. Sentential negation is the canonical example of a downward-entailing environment, as the entailment from the superset \textit{reptiles} in (\ref{reptiles}) to the subset \textit{snakes} in (\ref{snakes}) shows.
+
+\begin{exe}
+	\ex \label{reptiles} No reptiles give birth to live young.
+	\ex \label{snakes} No snakes give birth to live young.
+\end{exe}
+
+DP-internal \textit{only} only licenses NPIs within its DP, so that is the relevant position to look for a downward entailment. The evidence initially suggests that DP-internal \textit{only} does not create an downward entailment. (\ref{everest-29}) does not entail (\ref{everest-30}), although the set of mountains taller than 30,000 feet is clearly a subset of the set of mountains taller than 29,000 feet. (\ref{russian-book}) does not necessarily entail (\ref{gogol-book})---suppose the only book in the library written by an Russian was actually by Turgenev---even though Gogol is in the set of all Russians.
+
+\begin{exe}
+	\ex \label{everest-29} The only mountain greater than 29,000 feet tall is Everest.
+	\ex \label{everest-30} The only mountain greater than 30,000 feet tall is Everest.
+	\ex \label{russian-book} The only book in the library written by a Russian is already checked out.
+	\ex \label{gogol-book} The only book in the library written by Gogol is already checked out.
+\end{exe}
+
+However, I do not think that (\ref{everest-29})-(\ref{gogol-book}) constitute a knock-down argument against DP-internal \textit{only}'s downward monotonicity. The failure of the superset sentence to entail the subset sentence stems solely from the possibility of the definite description failing to refer. In other words, (\ref{everest-29}) does in fact entail (\ref{everest-30}) and (\ref{russian-book}) does (\ref{gogol-book}), so long as the definite descriptions \textit{the only mountain greater than 30,000 feet} and \textit{the only book in the library that was written by Gogol} have referents. It is never possible for (\ref{everest-29}) to be true and (\ref{everest-30}) to be false. If (\ref{everest-29}) is true, then (\ref{everest-30}) is either true or undefined.
+
+Nevertheless, other downward-entailing operators do not carry an existence requirement: (\ref{reptiles}) entails (\ref{iguanas}) regardless of whether or not such a creature as a four-toed frilled iguana actually exists.
+
+\begin{exe}
+	\ex \label{iguanas} No four-toed frilled iguanas give birth to live young.
+\end{exe}
+
+The source of this discrepancy is of course the definite article (or the \textsc{Iota} shift, per \citeauthor{cb2015}), which causes the entire sentence to have an undefined truth value if its NP complement is not a singleton set.
+
+In short, DP-internal \textit{only} creates a downward entailment (though still subject to the uniqueness requirement of the definite article), and thus the NPI-licensing properties of \textit{only} and \textit{edinstvennyj} fit neatly into the classical paradigm.
+
+
+\section{Conclusion \label{sec:conclusion}}
+
+
+\section*{Acknowledgements}
+I am grateful to Alexandr Trubetskoy, Maxim Sonin, Sophie Chochaeva, and Ivan Tseytlin for their help with the Russian data.
+
+\bibliography{thesis}
+
+\end{document}
