@@ -1,0 +1,82 @@
+\section{Anti-uniqueness effects in English \label{sec:anti-unique-en}}
+Anti-uniqueness effects occur in English when a definite description containing DP-internal \textit{only} or another exclusive adjective (such as \textit{sole} or \textit{single}) is in the scope of negation.
+
+In the following discussion several terms from \citet{cb2015} are used: ``definiteness'' in the restricted sense of a morphological feature, most commonly the definite article, which signals a weak uniqueness\footnote{Weak uniqueness is defined as uniqueness or non-existence, i.e. if uniqueness means $|P| = 1$ then weak uniqueness means $|P| \le 1$.} presupposition in English; ``determinacy,'' the property of denoting an individual (i.e., having type $e$); and ``anti-uniqueness effect,'' to refer to the phenomenon of a definite description lacking an existence\footnote{Despite the name, it is in fact the existence implication that anti-unique definites lack \citep[p. 385]{cb2015}.} entailment, i.e. a definite that is indeterminate.
+
+\subsection{Predicative anti-uniqueness in English}
+(\ref{scott}), repeated below, is the canonical example of anti-uniqueness in the predicate position.
+
+\begin{exe}
+	\exr{scott} Scott is not the only author of \textit{Waverley}.
+\end{exe}
+
+Suppose a fictional context where the novel \textit{Waverley} was written by a committee comprising Scott, Macfarlane and Campbell, in which case (\ref{scott}) would be a true utterance.
+
+In such a context, the phrases \textit{author of Waverley} and \textit{only author of Waverley} denote the sets (\ref{def-author}) and (\ref{def-only-author}). In other words, \textit{author of Waverley} is the set of individuals who are authors of \textit{Waverley}, and \textit{only author of Waverley} is the set of individuals who are ``only authors'' of \textit{Waverley}. Since in this context there are by definition no ``only authors'', this set is empty.
+
+\begin{exe}
+	\ex \label{def-author} $\textit{author of Waverley} = \lbrace Scott, Macfarlane, Campbell \rbrace$
+	\ex \label{def-only-author} $\textit{only author of Waverley} = \emptyset$
+\end{exe}
+
+But if the set denoted by \textit{only author of Waverley} is empty, then what could \textit{the only author of Waverley} denote? In conventional theories of definiteness, the use of a phrase \textit{the P} is only possible if there is a single, unique \textit{P} \citep{horn-abbott-2012}, or in the terminology of sets, if \textit{P} denotes a singleton set.
+
+In particular, \citet{frege} and \citet{strawson50} have uniqueness as a presupposition for definite descriptions, \citet{russell} has it as an assertion, and \citet{horn-abbott-2012} have it as an implicature.
+
+All these accounts share uniqueness as an essential part of the meaning of the definite article. What is so surprising about the ``anti-uniqueness effects'' that (\ref{scott}) evinces is the absence, and in fact denial, of uniqueness in a definite description.
+
+\subsection{Argumental anti-uniqueness in English}
+Anti-uniqueness effects are possible with definite arguments as well as definite predicates.
+
+\begin{exe}
+	\ex \label{only-goal} Anna didn't score the only goal.
+\end{exe}
+
+A simple diagnostic is available to test the presence or absence of anti-uniqueness with an argumental definite. If the definite description indeed fails to denote an individual, then it should not be able to serve as the antecedent of a pronoun in a subsequent sentence. The contrast between (\ref{the-goal}) and (\ref{only-goal-multiple}) thus testifies to the presence of an anti-uniqueness effect in (\ref{only-goal}).
+
+\begin{exe}
+	\ex \label{the-goal} Anna didn't score [ the goal ]_1. It_1 was an excellent strike.
+	\ex \label{only-goal-multiple} Anna didn't score [ the only goal ]_1. \#It_1 was an excellent strike.
+\end{exe}
+
+Note that (\ref{only-goal}) is actually ambiguous between a reading where one goal was scored by someone other than Anna and a reading where multiple goals were scored, including one by Anna. Under the one-goal reading, \textit{the only goal} does have a referent and therefore should be able to be a pronoun's antecedent, while it should not be under the multiple-goals reading. (\ref{only-goal-ambig-one}) and (\ref{only-goal-ambig-multiple}) tease apart the two readings with additional context and validate the two predictions.
+
+\begin{exe}
+	\ex \label{only-goal-ambig-one} One-goal reading: Anna didn't score [ the only goal ]$_1$, Maria did. It$_1$ was an excellent strike.
+	\ex \label{only-goal-ambig-multiple} Multiple-goals reading: Anna didn't score [ the only goal ]$_1$, Maria also scored. \#It$_1$ was an excellent strike.
+\end{exe}
+
+The two readings correspond to two different scopes of negation. In the one-goal reading, negation takes wide scope over the entire VP \textit{score the only goal}. In the multiple-goals reading, negation takes narrow scope over the argument \textit{the only goal}, yielding an anti-uniqueness effect. The narrow scope of negation in (\ref{only-goal-ambig-multiple}) is evident in the fact that the verb \textit{score} is not interpreted as negated---Anna did score something, on this reading.
+
+Only verbs of creation can induce argumental anti-uniqueness effects in English. When \textit{see} is substituted for \textit{score}, as in (\ref{see-only-goal}), then the referential use of \textit{the only goal} is forced; (\ref{see-only-goal}) can only mean that there was a single goal.\footnote{The multiple-goals reading is still possible with heavy emphasis on \textit{only}, as in: \begin{exe} \ex Anna didn't see the ONLY goal. There was more than one. \end{exe} I have no explanation for this possibility.}
+
+\begin{exe}
+	\ex \label{see-only-goal} Anna didn't see the only goal.
+\end{exe}
+
+\subsection{\citegen{cb2015} theory of definiteness}
+Two approaches are possible to account for the absence of a uniqueness entailment in (\ref{scott}) and (\ref{only-goal}): to loosen the uniqueness requirement for all definite descriptions, or to declare that the phrases with DP-internal \textit{only} are not definites at all. \citeauthor{cb2015} adopt the former approach. In section \ref{sec:exist-unique} I will present a theory along the latter lines.
+
+The cornerstone of \citeauthor{cb2015}'s theory is that the definite and indefinite articles in English are identity functions on predicates in terms of assertive contents, and the definite article carries an additional weak uniqueness presupposition. A typical definite like \textit{the table} would be given the formula in (\ref{the-table}), where $\partial(|\textsc{Table} \le 1|)$ uses \citegen{beaver92} partial operator and should be read as ``presupposing that the set of tables has a cardinality of 0 or 1.''
+
+\begin{exe}
+	\ex \label{the-table} $\textit{the table} = \lambda x . [ \partial(|\textsc{Table}| \le 1) \land \textsc{Table}(x) ]$
+\end{exe}
+
+A consequence of \citeauthor{cb2015}'s definition of the definite article is that definite descriptions are of type $\langle e, t \rangle$. Of course, definite descriptions commonly appear in argument positions where they must have type $e$. To allow for this, \citeauthor{cb2015} propose that the covert type shifters \textsc{Iota} and \textsc{A} from \citet{partee86} apply in English to yield determinate and indeterminate readings of DPs.
+
+Of course, definites are always determinate, except in the case of anti-uniqueness effects, and indefinites are always indeterminate, so \citeauthor{cb2015} need an account of why \textsc{Iota} can never apply to indefinites, and \textsc{A} can only apply to anti-unique definites. They account for this with the principles of Maximize Presupposition and Type Simplicity. Informally, Maximize Presupposition states that if there are two possible words whose meanings are identical, then the one with the greater presupposition should be chosen. Per \citeauthor{cb2015}, the indefinite and definite article have the same meaning, but the definite article has an extra presupposition of weak uniqueness, so in a situation where weak uniqueness is in the common ground, the definite article must be chosen.
+
+Type Simplicity is the preference for simpler types, all else being equal. \textsc{Iota} has type $\lbrace et, e \rbrace$ while \textsc{A} has type $\lbrace et, \lbrace et, t \rbrace \rbrace$, so \textsc{Iota} would be preferred unless its licensing condition (uniqueness) is not met.
+
+Thus the principles of Maximize Presupposition and Type Simplicity ensure that definiteness and determinacy, and indefinteness and indeterminacy, are usually construed in English.
+
+In summary, \citeauthor{cb2015}'s theory of definiteness has the following components:
+
+\begin{itemize}
+	\item The definite and indefinite articles are identity functions. The definite article additionally carries a weak uniqueness presupposition.
+	\item Definite and indefinite are fundamentally predicative and have type $\lbrace e, t \rbrace$ before type-shifting.
+	\item DPs receive their (in)determinacy through the \textsc{Iota} and \textsc{A} covert type shifts.
+\end{itemize}
+
+\citegen{cb2015} theory of definiteness makes two concrete predictions with regards to Russian: that anti-uniqueness effects should be evident in at least the same positions as in English, and that DP-internal \textit{only} should permit indeterminate readings more freely than in English. The reason for these predictions is that Russian lacks articles and allows bare nominals in argument positions to be interpreted as either determinate or indeterminate. Without articles, Maximize Presupposition is no longer in play so in principle nothing should block the indeterminate or determinate readings of bare nominals, including those with DP-internal \textit{only}. The following two sections explore each of these predictions in turn.

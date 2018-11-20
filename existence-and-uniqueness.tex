@@ -1,0 +1,56 @@
+\section{Existence and uniqueness entailments \label{sec:exist-unique}}
+% TODO: Critique of C+B (2015)
+
+An alternative to the Fregean and Russellian accounts of definites locates the fundamental difference between indefinites and definites in familiarity: the definite article is used when the reference is familiar to both speaker and listener, and the indefinite article is used when it is familiar only to the speaker \citep{heim82}.
+
+The familiarity theory of definites seems equally ill-equipped to deal with definites with DP-internal \textit{only}. In the discourse in (\ref{newcastle}), for instance, the referent of \textit{the only goal} is clearly not familiar to the speaker (hence why \textit{the goal} is not licensed), but it can nonetheless be used felicitously.
+
+\begin{exe}
+	\ex \label{newcastle} - What was the score in this morning's match? \\
+	    - Newcastle scored the *(only) goal.
+\end{exe}
+
+\subsection{Existence presupposition}
+The existence presupposition of DP-internal \textit{only}
+
+\begin{exe}
+	\ex Scott is the only author of \textit{Waverley}.
+		\begin{xlist}
+			\ex Scott is an author of \textit{Waverley}.
+			\ex There are no other authors of \textit{Waverley}.
+		\end{xlist}
+	\ex Scott is not the only author of \textit{Waverley}.
+		\begin{xlist}
+			\ex Scott is an author of \textit{Waverley}.
+			\ex There are other authors of \textit{Waverley}.
+		\end{xlist}
+\end{exe}
+
+\subsection{Uniqueness assertion}
+
+\begin{exe}
+	\ex Is is true that John lives in the house with a green roof? \\
+	    - No, he lives next door. \\
+	    - \#No, there are two houses with a green roof.
+	\ex Is is true that John lives in the only house with a green roof? \\
+	    - No, he lives next door. \\
+	    - No, there are two houses with a green roof.
+\end{exe}
+
+\begin{exe}
+	\ex \#He's not the ambassador to Spain---there are two.
+	\ex He's not the only ambassador to Spain---there are two.
+\end{exe}
+
+\subsection{Contribution of the definite article}
+If DP-internal \textit{only} already carries existence and uniqueness entailments, what contribution does the definite article make in phrases of the form \textit{the only X}?
+
+In fact, the existence presupposition and uniqueness assertion are already presented in \citegen{cb2015} proposed logical form for \textit{only}, given below.
+
+\begin{exe}
+	\ex \textit{only}: $ \lambda P . \lambda x . [ \partial(P(x)) \land \forall y [ x \ne y \to \neg P(y) ] ] $
+\end{exe}
+
+\citeauthor{cb2015} use the partial operator $\partial$ to indicate the presupposed content. Notice that presupposing $P(x)$ amounts to presupposing existence, and that the second conjunct is an assertion of the uniqueness of $x$ relative to the predicate $P$.
+
+Where this proposal differs from \citegen{cb2015} is in the role of the definite article.
