@@ -63,3 +63,24 @@ This is not merely an \textit{ad hoc} stipulation. There is independent evidence
 Certain expressions like \textit{read the newspaper} and \textit{take the bus} also do not seem to involve proper definites, as the referents of \textit{the newspaper} and \textit{the bus} need not be familiar or unique. They are essentially identical to saying \textit{read a newspaper} and \textit{take a bus}.
 
 The existence of other examples where the word \textit{the} does not have the semantics of the definite article supports my hypothesis that \textit{the} in \textit{the only} is likewise not the definite article.
+
+\subsection{Examples}
+A theory in which \textit{only} does not presuppose uniqueness implies that \textit{only} NPs behave more similarly to indefinites than definites. In particular, an expression like \textit{the only cookie} in (\ref{yusuf}) cannot be of type $e$, because the absence of the presupposition uniqueness means that
+
+\begin{exe}
+	\ex \label{yusuf} Yusuf ate the only cookie.
+\end{exe}
+
+The interpretation of (\ref{yusuf}) would be along the lines of:
+
+\begin{exe}
+	% TODO: Think about whether the presupposition is correct here.
+	\ex \label{yusuf-lf} $\exists x . \textsc{Ate}(y, x) \land \partial(\textsc{Cookie}(x)) \land \forall y [ x \ne y \to \neg \textsc{Cookie}(x) ]$
+\end{exe}
+
+In order for (\ref{yusuf-lf}) to be derivable from (\ref{yusuf}), the \textit{only} NP must undergo some kind of raising operation---analogous to that postulated for indefinite NPs in argument positions. The raising operation would have to bring \textit{the only cookie} outside of the scope of negation, so that the negated version of the sentence in (\ref{yusuf2}) would receive the interpretation in (\ref{yusuf2-lf}) in which only $\textsc{Ate}(x, y)$ is negated, and not the uniqueness assertion.
+
+\begin{exe}
+	\ex \label{yusuf2} Yusuf didn't eat the only cookie.
+	\ex \label{yusuf2-lf} $\exists x . \neg\textsc{Ate}(y, x) \land \partial(\textsc{Cookie}(x)) \land \forall y [ x \ne y \to \neg \textsc{Cookie}(x) ]$
+\end{exe}
