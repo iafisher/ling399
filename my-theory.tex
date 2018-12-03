@@ -1,0 +1,65 @@
+\section{A theory of \textit{the} and \textit{only} \label{sec:my-theory}}
+Two approaches are possible to account for the absence of a uniqueness entailment in (\ref{scott}) and (\ref{only-goal}): to loosen the uniqueness requirement for all definite descriptions, or to declare that the phrases with DP-internal \textit{only} are not definites at all. \citeauthor{cb2015} adopt the former approach. In this section, I will present a theory along the latter lines, in which DP-internal \textit{only} presupposes existence and asserts uniqueness, and the lexical item \textit{the} that combines with \textit{only} is a semantically vacuous determiner.
+
+\subsection{Existence presupposition}
+Since the definite article\footnote{Although later I will argue that \textit{the} in \textit{the only} is not actually the definite article, here I assume a skeptical reader who has not yet been convinced of the point.} carries an existence presupposition itself, it is difficult to tease apart whether it is \textit{only} or \textit{the} which contributes the existence presupposition in examples where both words are present. Regardless, it is clear from the shared entailment of Scott's authorship in (\ref{exist-presup1}) and its negated counterpart (\ref{exist-presup2}) that definite descriptions with DP-internal \textit{only} have an existence presupposition.
+
+\begin{exe}
+	\ex \label{exist-presup1} Scott is the only author of \textit{Waverley}.
+		\begin{xlist}
+			\ex Scott is an author of \textit{Waverley}.
+			\ex There are no other authors of \textit{Waverley}.
+		\end{xlist}
+	\ex \label{exist-presup2} Scott is not the only author of \textit{Waverley}.
+		\begin{xlist}
+			\ex Scott is an author of \textit{Waverley}.
+			\ex There are other authors of \textit{Waverley}.
+		\end{xlist}
+\end{exe}
+
+To say that DP-internal \textit{only} has an existence presupposition is a bit of a stipulation as it by definition cannot be separated from the definite article. There is stronger evidence that DP-internal \textit{only} has a uniqueness assertion, and if that is the case then the definite article would no longer be compatible with DP-internal \textit{only} since its uniqueness presupposition would clash with \textit{only}'s uniqueness assertion. If the definite article is out, then \textit{only} is the only word left which could plausibly carry the existence presupposition.
+
+\subsection{Uniqueness assertion}
+DP-internal \textit{only} asserts uniqueness. This fact is demonstrated first of all by anti-uniqueness effects. Since uniqueness can be cancelled by negation in such examples, it cannot be a presupposition.
+
+Additional evidence supports the point. In (\ref{green-roof-the}), the second speaker cannot felicitously challenge the uniqueness of \textit{house with a green roof}. In (\ref{green-roof-the-only}), the same exchange but with \textit{the only} instead of \textit{the}, the second speaker is free to challenge the uniqueness of the phrase's referent, indicating that uniqueness is at-issue and thus a semantic assertion.
+
+\begin{exe}
+	\ex \label{green-roof-the} Is it true that John lives in the house with a green roof? \\
+	    - No, he lives next door. \\
+	    - \#No, there are two houses with a green roof.
+	\ex \label{green-roof-the-only} Is it true that John lives in the only house with a green roof? \\
+	    - No, he lives next door. \\
+	    - No, there are two houses with a green roof.
+\end{exe}
+
+Similar evidence comes directly from \citet{cb2015}:
+
+% TODO: Think some more about Courtney's comments.
+\begin{exe}
+	\ex \#He's not the ambassador to Spain---there are two.
+	\ex He's not the only ambassador to Spain---there are two.
+\end{exe}
+
+Only the uniqueness of the phrase with \textit{only} may be negated---a clear indication that \textit{the only ambassador to Spain} lacks a uniqueness presupposition.
+
+\subsection{Contribution of the definite article}
+In fact, the existence presupposition and uniqueness assertion are already presented in \citegen{cb2015} proposed logical form for \textit{only}, given below.
+
+\begin{exe}
+	\ex \textit{only}: $ \lambda P . \lambda x . [ \partial(P(x)) \land \forall y [ x \ne y \to \neg P(y) ] ] $
+\end{exe}
+
+\citeauthor{cb2015} use the partial operator $\partial$ to indicate the presupposed content. Notice that presupposing $P(x)$ amounts to presupposing existence, because the $P(a)$ that will result once \textit{only} composes with some referential entity $a$ logically entails $\exists x . P(x)$. And the second conjunct is an assertion of the uniqueness of $x$ relative to the predicate $P$, so existence and uniqueness are already built in to \citeauthor{cb2015}'s definition and redundantly encoded in their theory by the \textsc{Iota} type-shift.
+
+Where my proposal diverges from \citegen{cb2015} is in the role of the definite article in phrases with DP-internal \textit{only}. \citeauthor{cb2015} assert that it is the regular definite article that appears in every other definite description. This is why they must substantially change its semantics to fit the evidence. In my proposal, \textit{the} in \textit{the only} is not the definite article, but a semantically vacuous determiner.
+
+This is not merely an \textit{ad hoc} stipulation. There is independent evidence that \textit{the} may be used in non-definite contexts. For example, the phrase \textit{the unicorn} in (\ref{unicorn}) has a kind reading rather than a definite one.
+
+\begin{exe}
+	\ex \label{unicorn} The unicorn is a rare beast.
+\end{exe}
+
+Certain expressions like \textit{read the newspaper} and \textit{take the bus} also do not seem to involve proper definites, as the referents of \textit{the newspaper} and \textit{the bus} need not be familiar or unique. They are essentially identical to saying \textit{read a newspaper} and \textit{take a bus}.
+
+The existence of other examples where the word \textit{the} does not have the semantics of the definite article supports my hypothesis that \textit{the} in \textit{the only} is likewise not the definite article.
