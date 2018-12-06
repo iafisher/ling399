@@ -5,45 +5,68 @@ So far in this paper I have exclusively discussed the so-called ``DP-internal'' 
 	\ex \label{adverb-only} Only Omar takes the bus.
 \end{exe}
 
-DP-internal and adverbial \textit{only} share many properties, including the basic inference pattern of existence and uniqueness and the licensing of negative polarity, but also differ in some respects, notably in that adverbial \textit{only} more reliably induces an alternative set. The purpose of this section is to suggest that a unified account of the two \textit{only}s is not out of the question.
+DP-internal and adverbial \textit{only} share many properties, including the basic inference pattern of existence and uniqueness and the licensing of negative polarity, but also differ in some respects, notably in that adverbial \textit{only} more reliably induces an alternative set. The purpose of this section is to argue that my analysis of DP-internal \textit{only} does not preclude a unified account of the two \textit{only}s, though the details of what a unified account would look like are beyond the scope of this paper.
 
-\subsection{Cross-linguistic perspective}
-We have seen that DP-internal \textit{only} is translated as \textit{edinstvennyj} in Russian. Adverbial \textit{only} corresponds to a different lexical item, \textit{tol'ko}:
-
-\begin{exe}
-	\ex \gll Tol'ko studenty pri\v{s}li.\\
-	only students came\\
-	\glt `Only the students came.'
-\end{exe}
-
-The same lexical distinction is made in Spanish and German \citep{mcnally08} and Chinese (Shizhe Huang, p.c.). On the other hand, French uses the same word, \textit{seul}:\footnote{I thank Ma\"{e}lys Gl\"{u}ck for this data. French also has an adverb \textit{seulement}, morphologically derived from \textit{seul}, which corresponds to some usages of adverbial \textit{only} in English.}
+\subsection{Compositional semantics}
+(\ref{only-lf}), repeated below, is the logical form of DP-internal \textit{only} which I have adopted from \citet{cb2015}.
 
 \begin{exe}
-	\ex \gll Seuls les \'{e}tudiants sont venus.\\
-	Only the students are came\\
-	\glt `Only the students came.'
-	\ex \gll Julia a \'{e}crit le seul bon essai.\\
-	Julia has written the only good essay\\
-	\glt `Julia wrote the only good essay.'
+	\exr{only-lf} \textit{only}: $ \lambda P . \lambda x . [ \partial(P(x)) \land \forall y [ x \ne y \to \neg P(y) ] ] $
 \end{exe}
 
-English is therefore not unique in having a single lexical item for DP-internal and adverbial \textit{only}, but the presence of a lexical distinction in a number of languages, including some that are genealogically unrelated, suggests that deeper differences in the meaning of the two usages may be present.
-
-\subsection{Alternative sets and focus}
-Alternative sets are a fundamental part of the semantics of adverbial \textit{only} \citep{rooth85, rooth92}. We have seen in section \ref{sec:no-anti-unique} that alternative sets may help explain some intriguing Russian data with DP-internal \textit{only}. However, they do not seem to be universally present with DP-internal \textit{only}. (\ref{raj-cookie}), for instance, does not involve any kind of alternative set. It is synonymous with the equivalent sentence without \textit{only}. But there is no implication of any alternatives to the cookie that Raj ate. Similarly, (\ref{rebecca-bus}) does not imply any other buses than the one to Wichita. Rather, the function of \textit{only} in both sentences is to emphasize the uniqueness of the referents of \textit{cookie} and \textit{bus}.
+The formula for DP-internal \textit{only} in (\ref{only-lf}) also adequately captures the meaning of adverbial \textit{only} in (\ref{adverb-only}). Suppose the following translations:
 
 \begin{exe}
-	\ex \label{raj-cookie} Raj ate the only cookie.
-	\ex \label{rebecca-bus} Rebecca took the only bus to Wichita.
+	\ex \textit{Omar}: $o$
+	\ex \textit{takes the bus}: $\lambda x . \textsc{Take-bus}(x)$
 \end{exe}
 
-Nevertheless, other uses of DP-internal \textit{only} do seem to involve a set of alternatives, such as (\ref{margaret-hatchback}) which induces of a set of alternatives of the form ``one with an X'' where ``X'' stands for some kind of car other than a hatchback. In other words, (\ref{margaret-hatchback}) could only be uttered in a situation in which multiple people had cars but only Margaret had a hatchback.
+If \textit{only} composes first with \textit{takes the bus} and then with \textit{Omar}, then the logical form of the entire sentence would be (\ref{omar-lf}).
 
 \begin{exe}
-	\ex \label{margaret-hatchback} Margaret is the only one with a HATCHBACK.
+	\ex \label{omar-lf} \textit{Only Omar takes the bus}: $\partial(\textsc{Take-bus}(o)) \land \forall y [ o \ne y \to \neg \textsc{Take-bus}(y) ]$
 \end{exe}
 
-The evidence is not definitive on DP-internal \textit{only} and alternative sets. It can at least be said that some uses of DP-internal \textit{only} imply an alternative set, but it remains to be seen whether it can be shown that all uses do.
+(\ref{omar-lf}) works out to presuppose that Omar takes the bus and assert that no one else does, which is the correct semantics of the sentence. This division of presupposition and assertion is the standard analysis of simple sentences with \textit{only} \citep{horn69}.
+
+The one caveat is that syntactically it would be more plausible for \textit{only} to compose first with \textit{Omar} and then with \textit{takes the bus}. Of course this could be accomplished by switching the order of the parameters $P$ and $x$ in (\ref{only-lf}), but then it would be impossible to derive the correct semantics for the DP-internal usage of \textit{only}.
+
+While there may be tractable technical issues in realizing a unified account of the two \textit{only}s in the framework of compositional semantics, it is nonetheless clear that the difficulty resides mostly in the syntax, and that the semantics of the two words are near-identical.
+
+% TODO: This claim ^ is a little strong.
+
+\subsection{Alternative sets and association with focus}
+Alternative sets are a fundamental part of the semantics of adverbial \textit{only} \citep{rooth85, rooth92}. We have seen in section \ref{sec:no-anti-unique} that alternative sets may help explain some intriguing Russian data with DP-internal \textit{only}. Similarly, \textit{only} NPs with restricting clauses or PPs also involve alternative sets. (\ref{rebecca-only-bus}), for instance, carries a stronger implication of the existence of buses to other cities than (\ref{rebecca-bus}) does.
+
+\begin{exe}
+	\ex \label{rebecca-only-bus} Rebecca took the only bus to Wichita.
+	\ex \label{rebecca-bus} Rebecca took the bus to Wichita.
+\end{exe}
+
+When \textit{only} NPs lack a restricting clause, like in (\ref{raj-only-cookie}), then the presence of an alternative set becomes harder to diagnose. But again, the crucial difference between (\ref{raj-only-cookie}) and (\ref{raj-cookie}), its counterpart without \textit{only}, is that (\ref{raj-only-cookie}) carries a wider entailment of uniqueness (in the sense that (\ref{raj-cookie}) but not (\ref{raj-only-cookie} would be licensed at an event with more than one cookie), and to a certain degree implies the expectation that there would have been more than one cookie. It is with regard to these alternative, non-existent cookies that (\ref{raj-only-cookie}) expresses its meaning.
+
+\begin{exe}
+	\ex \label{raj-only-cookie} Raj ate the only cookie.
+	\ex \label{raj-cookie} Raj ate the cookie.
+\end{exe}
+
+\citet{rooth85} showed that adverbial \textit{only} associates with focus. Consider (\ref{focused-bill}) and (\ref{focused-sue}), where capitalization marks semantic focus.
+
+\begin{exe}
+	\ex \label{focused-bill} Mary only introduced BILL to Sue.
+	\ex \label{focused-sue} Mary only introduced Bill to SUE.
+\end{exe}
+
+In a situation where Mary introduced Bill and Dave to Sue, and Dave to Mary, (\ref{focused-bill}) would be false but (\ref{focused-sue}) would be true. But without \textit{only}, both sentences would be true. The crux of association with focus is thus the fact that \textit{only} interacts with semantic focus in a manner that affects truth conditions.
+
+DP-internal \textit{only} likewise associates with focus. Suppose that Mary has a red hatchback, Mike has a red pick-up truck, and Susan has a blue sedan. In that context (\ref{focused-hatchback}) would be true but (\ref{focused-red}) would be false insofar as it implies that other people also have hatchbacks. Again, removing \textit{only} renders both sentences true in the given context.
+
+\begin{exe}
+	\ex \label{focused-hatchback} Margaret is the only one with a red HATCHBACK.
+	\ex \label{focused-red} Margaret is the only one with a RED hatchback.
+\end{exe}
+
+The evidence is fairly strong that DP-internal \textit{only} induces alternative sets, although the alternation in unrestricted \textit{only} NPs like (\ref{raj-only-cookie}) is more difficult to detect.
 
 \subsection{Negative polarity items and downward entailment}
 Section \ref{sec:edinstvennyj} showed that DP-internal \textit{only}, like adverbial \textit{only}, licenses negative polarity items.
@@ -74,3 +97,27 @@ An identical pattern emerges with DP-internal \textit{only}. (\ref{ca-30}) entai
 \end{exe}
 
 Both \textit{only}s share the same pattern of Strawson downward entailment in their licensing of negative polarity items.
+
+\subsection{Cross-linguistic perspective}
+We have seen that DP-internal \textit{only} is translated as \textit{edinstvennyj} in Russian. Adverbial \textit{only} corresponds to a different lexical item, \textit{tol'ko}:
+
+\begin{exe}
+	\ex \gll Tol'ko studenty pri\v{s}li.\\
+	only students came\\
+	\glt `Only the students came.'
+\end{exe}
+
+The same lexical distinction between adverbial and DP-internal \textit{only} is made in Spanish and German \citep{mcnally08} and Chinese (Shizhe Huang, p.c.). On the other hand, French uses the same word, \textit{seul}:\footnote{I thank Ma\"{e}lys Gl\"{u}ck for this data. French also has an adverb \textit{seulement}, morphologically derived from \textit{seul}, which corresponds to some usages of adverbial \textit{only} in English.}
+
+\begin{exe}
+	\ex \gll Seuls les \'{e}tudiants sont venus.\\
+	Only the students are came\\
+	\glt `Only the students came.'
+	\ex \gll Julia a \'{e}crit le seul bon essai.\\
+	Julia has written the only good essay\\
+	\glt `Julia wrote the only good essay.'
+\end{exe}
+
+The cross-linguistic evidence on the lexical identity of the two \textit{only}s is thus mixed and does not clearly support either a unified or a distinct account.
+
+% TODO: Conclusion saying that the two onlys are likely identical.
