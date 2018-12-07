@@ -1,49 +1,30 @@
 \section{\textit{Only} NPs in English \label{sec:only-nps-english}}
-% TODO: Need some substantial work on this section in terms of how I describe what I used to call "anti-uniqueness" effects
+\textit{Only} NPs are always definite in English, with the exception of the idiom \textit{an only child}. Although \textit{only} NPs are definites, they do not always carry a uniqueness presupposition. (\ref{scott}), repeated below, is a typical example of an \textit{only} NP that does not presuppose uniqueness.
 
-\textit{Only} NPs (that is, NPs that contain the exclusive adjective \textit{only}) in the scope of negation lack uniqueness presuppositions, contrary to typical definite descriptions. This section summarizes the data presented in \citet{cb2012b, cb2015}. I follow them in first considering predicative definites, and then argumental definites.
-
-\subsection{Predicative \textit{only} NPs in English}
-% TODO: This is not a great intro
-As \citet{strawson50} observed, definite descriptions may be used predicatively, as in (\ref{scott}) and (\ref{napoleon}) below, where \textit{the greatest French soldier} is not used to mention an individual but to attribute a property to Napoleon.
-
-\begin{exe}
-	\ex \label{napoleon} Napoleon was the greatest French soldier.
-\end{exe}
-
-(\ref{scott}), repeated below, is a typical example of an \textit{only} NP in the predicate position.
+% TODO: Make it clear that these are C+B's examples.
 
 \begin{exe}
 	\exr{scott} Scott is not the only author of \textit{Waverley}.
 \end{exe}
 
-Suppose a fictional context where the novel \textit{Waverley} was written by a committee comprising Scott, Macfarlane and Campbell, in which case (\ref{scott}) would be a true utterance. In such a context, the phrases \textit{author of Waverley} and \textit{only author of Waverley} denote the sets (\ref{def-author}) and (\ref{def-only-author}). In other words, \textit{author of Waverley} is the set of individuals who are authors of \textit{Waverley}, and \textit{only author of Waverley} is the set of individuals who are ``only authors'' of \textit{Waverley}. Since in this context there are by definition no ``only authors,'' this set is empty.
+Suppose a fictional context where the novel \textit{Waverley} was written by a committee comprising Scott, Macfarlane and Campbell, in which case (\ref{scott}) would be a true utterance. In such a context, the predicate \textit{author of Waverley} would have multiple satisfiers and uniqueness would not be satisfied. A sentence without a false presupposition does not have a defined truth value, but (\ref{scott}) is a true sentence, so the \textit{only} NP must not have a uniqueness presupposition.
+
+Another way of putting it is that \textit{the only author of Waverley} in (\ref{scott}) is indeterminate: it does not denote an individual and thus is not of type $e$.
+
+Observe that it is crucially the words \textit{only} and \textit{not} which cancel the uniqueness presupposition. When either is removed, as in (\ref{scott-wo-only}) and (\ref{scott-wo-not}), then the definite description refers to a single, unique author.
 
 \begin{exe}
-	\ex \label{def-author} $\textit{author of Waverley} = \lbrace Scott, Macfarlane, Campbell \rbrace$
-	\ex \label{def-only-author} $\textit{only author of Waverley} = \emptyset$
+	\ex \label{scott-wo-only} Scott is not the author of \textit{Waverley}.
+	\ex \label{scott-wo-not} Scott is the only author of \textit{Waverley}.
 \end{exe}
 
-But if the set denoted by \textit{only author of Waverley} is empty, then what could \textit{the only author of Waverley} denote? In conventional theories of definiteness, the use of a phrase \textit{the P} is only possible if there is a single, unique \textit{P} \citep{horn-abbott-2012}, or in the terminology of sets, if \textit{P} denotes a singleton set.\footnote{Plural definites like \textit{the authors} are outside of the scope of discussion of this thesis.}
-
-In particular, \citet{frege} and \citet{strawson50} have uniqueness as a presupposition for definite descriptions, \citet{russell} has it as an assertion, and \citet{horn-abbott-2012} have it as an implicature.
-
-All these accounts share uniqueness as an essential part of the meaning of the definite article. What is so surprising about the \textit{only} NP in (\ref{scott}) is the absence, and indeed the denial, of uniqueness in an otherwise typical definite description.
-
-\subsection{Argumental \textit{only} NPs in English}
-Argumental \textit{only} NPs in the scope of negation similarly lack a uniqueness presupposition. (\ref{only-goal}) is an example. On its most prominent reading, (\ref{only-goal}) entails that multiple goals were scored, including one by Anna, so just as in (\ref{scott}) the description \textit{the only goal} cannot have a referent.
+Indeterminate \textit{only} NPs are not restricted to the predicate position. (\ref{only-goal}) is an example of an argumental \textit{only} NPs lacking a uniqueness presupposition.
 
 \begin{exe}
 	\ex \label{only-goal} Anna didn't score the only goal.
 \end{exe}
 
-% TODO: Consider moving this to section on Russian.
-There is a simple diagnostic is available to test the determinacy of an argumental definite (and thus presence or absence of an anti-uniqueness effect). If the definite description fails to denote an individual, then it is not able to serve as the antecedent of a pronoun in a subsequent sentence. The contrast between (\ref{the-goal}) and (\ref{only-goal-multiple}) therefore testifies to the presence of an anti-uniqueness effect in (\ref{only-goal}).
-
-\begin{exe}
-	\ex \label{the-goal} Anna didn't score [ the goal ]_1. It_1 was an excellent strike.
-	\ex \label{only-goal-multiple} Anna didn't score [ the only goal ]_1. \#It_1 was an excellent strike.
-\end{exe}
+In a context where Anna's team scored multiple goals, and she scored one, then (\ref{only-goal}) would be true. But the existence of multiple goals means that uniqueness is not satisfied relative to the predicate \textit{goal}, and \textit{the only goal} is indeterminate.
 
 Note that (\ref{only-goal}) is actually ambiguous between a reading where one goal was scored by someone other than Anna and a reading where multiple goals were scored, including one by Anna. Under the one-goal reading, \textit{the only goal} does have a referent and therefore should be able to be a pronoun's antecedent, while it should not be under the multiple-goals reading. (\ref{only-goal-ambig-one}) and (\ref{only-goal-ambig-multiple}) use additional context to tease apart the two readings and validate the predictions.
 
@@ -70,5 +51,8 @@ The term ``verbs of creation'' in this context must be understood in a broad sen
 \begin{exe}
 	\ex \label{verb-of-creation} There were ten cakes, and then Anna brought one, making eleven.
 	\ex \label{not-verb-of-creation} \# There were ten goals, and then Anna saw one, making eleven.\footnote{Some of the strangeness of (\ref{not-verb-of-creation}) could be mitigated by replacing \textit{goal} with \textit{bird} and imagining a context where Anna was on a bird-spotting trip. But such a usage of \textit{saw} involves a notion of bringing something into the realm of first-hand knowledge, and, as predicted, would allow for a non-referential reading of \textit{the only bird}: \begin{exe} \ex Anna didn't see the only bird. Vera saw one, too. \end{exe} }
-	% TODO: Footnote about how "seeing a bird" could complicate this pattern?
 \end{exe}
+
+I have spoken of a lack of uniqueness presupposition with negated \textit{only} NPs. \citet{cb2015} describe it differently, as a lack of an existence presupposition. These descriptions are equivalent because they take uniqueness and existence relative to different sets. If \textit{P} does not satisfy uniqueness, then \textit{only P} must be empty (i.e., non-existent), because the existence of multiple entities that satisfy \textit{P} entails that there is no ``only P.'' If there are multiple tables, then there is no ``only table.'' Section \ref{sec:my-theory} will make it clearer why I have chosen different terminology.
+
+Fregean theories of definiteness have existence and uniqueness as entailments of the definite article. So regardless of whether one wishes to talk about the lack of an existence or a uniqueness presupposition, negated \textit{only} NPs pose a clear problem for such theories.
