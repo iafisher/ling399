@@ -64,7 +64,7 @@ Certain expressions like \textit{read the newspaper} and \textit{take the bus} a
 
 The existence of other examples where the word \textit{the} does not have the semantics of the definite article supports my hypothesis that \textit{the} in \textit{only} NPs is likewise not the definite article.
 
-\subsection{Examples}
+\subsection{Application to English}
 % TODO: Show derivation of predicative "the only"
 For concreteness, I adopt the following formulae for \textit{only} and \textit{the}:
 
@@ -81,13 +81,6 @@ The derivation in (\ref{author-lf})-(\ref{only-author-lf}) shows how the semanti
 	\ex \label{author-lf} \textit{author of Waverley}: $\lambda x . \textsc{Author}(x)$
 	\ex \textit{only author of Waverley}: $\lambda x . \partial(\textsc{Author}(x)) \land \forall y [ x \ne y \to \neg \textsc{Author}(y) ]$
 	\ex \textit{the only author of Waverley}: $\lambda x . \partial(\textsc{Author}(x)) \land \forall y [ x \ne y \to \neg \textsc{Author}(y) ]$
-	\ex \textit{is the only author of Waverley}: $\lambda x . \partial(\textsc{Author}(x)) \land \forall y [ x \ne y \to \neg \textsc{Author}(y) ]$
-	\ex \label{only-author-lf} \textit{Scott is the only author of Waverley}: \\ $\partial(\textsc{Author}(s)) \land \forall y [ s \ne y \to \neg \textsc{Author}(y) ]$
-\end{exe}
-
-The derivation of \textit{the only author of Waverley} is as before.
-
-\begin{exe}
 	\ex \textit{not the only author of Waverley}: \\ $\lambda x . \partial(\textsc{Author}(x)) \land \neg  \forall y [ x \ne y \to \neg \textsc{Author}(y) ]$
 	\ex \textit{is not the only author of Waverley}: \\ $\lambda x . \partial(\textsc{Author}(x)) \land \neg  \forall y [ x \ne y \to \neg \textsc{Author}(y) ]$
 	\ex \label{not-only-author-lf} \textit{Scott is not the only author of Waverley}: \\ $\partial(\textsc{Author}(s)) \land \neg \forall y [ s \ne y \to \neg \textsc{Author}(y) ]$
@@ -100,7 +93,9 @@ The universal quantifier in (\ref{not-only-author-lf}) can be re-written as an e
 	\ex $\neg \forall y [ s \ne y \to \neg \textsc{Author}(y) ] \equiv \exists y [ s \ne y \land \textsc{Author}(y) ]$
 \end{exe}
 
-A theory in which \textit{only} does not presuppose uniqueness implies that \textit{only} NPs behave more similarly to indefinites than definites. In particular, an expression like \textit{the only cookie} in (\ref{yusuf}) cannot be of type $e$, because the absence of the presupposition uniqueness means that
+A theory in which \textit{only} does not presuppose uniqueness implies that \textit{only} NPs behave more similarly to indefinites than definites. In particular, since \textit{only} NPs do not presuppose uniqueness, they cannot be of type $e$.
+
+% TODO: Transition
 
 \begin{exe}
 	\ex \label{yusuf} Yusuf ate the only cookie.
@@ -120,9 +115,10 @@ In order for (\ref{yusuf-lf}) to be derivable from (\ref{yusuf}), \textit{the on
 	\ex \label{yusuf2-lf} $\exists x . \neg\textsc{Ate}(y, x) \land \partial(\textsc{Cookie}(x)) \land \forall y [ x \ne y \to \neg \textsc{Cookie}(x) ]$
 \end{exe}
 
-% TODO: Haven't stated that only NPs cannot be of type e.
-The necessity of a raising operation is not surprising given the evidence that such phrases cannot be of type $e$.
+The necessity of a raising operation is not surprising given the evidence that such phrases cannot be of type $e$. \citet{cb2015} also posited a raising operation for the interpretation of argumental \textit{only} NPs, so the caveat is not even unique to my theory.
 
 % TODO: Do I have anything to say about verbs of creation?
+
+\subsection{Application to Russian}
 
 % TODO: Need to say something about how my theory handles Russian
