@@ -1,7 +1,5 @@
 \section{A theory of \textit{only} NPs \label{sec:my-theory}}
-% TODO: Say something about the Russian data
-
-Two approaches are possible to account for the absence of a uniqueness presupposition in (\ref{scott}) and (\ref{only-goal}): to loosen the uniqueness requirement for all definite descriptions, or to declare that the phrases with DP-internal \textit{only} are not definites at all. \citeauthor{cb2015} adopt the former approach. In this section, I will present a theory along the latter lines, in which DP-internal \textit{only} presupposes existence and asserts uniqueness, and the lexical item \textit{the} that combines with \textit{only} is a semantically vacuous determiner.
+In this section, I will present a theory to account for the data in sections \ref{sec:only-nps-english} and \ref{sec:only-nps-russian}, in which DP-internal \textit{only} presupposes existence and asserts uniqueness, and the lexical item \textit{the} that combines with \textit{only} in English is a semantically vacuous determiner.
 
 \subsection{Existence presupposition}
 Since the definite article\footnote{Although later I will argue that \textit{the} in \textit{the only} is not actually the definite article, here I assume a skeptical reader who has not yet been convinced of the point.} carries an existence presupposition itself, it is difficult to tease apart whether it is \textit{only} or \textit{the} which contributes the existence presupposition in examples where both words are present. Regardless, it is clear from the shared entailment of Scott's authorship in (\ref{exist-presup1}) and its negated counterpart (\ref{exist-presup2}) that definite descriptions with DP-internal \textit{only} have an existence presupposition.
@@ -49,7 +47,7 @@ Only the uniqueness of the phrase with \textit{only} may be negated---a clear in
 In fact, the existence presupposition and uniqueness assertion are already presented in \citegen{cb2015} proposed logical form for \textit{only}, given below, although they do not identify the entailments in these terms in their paper.
 
 \begin{exe}
-	\ex \textit{only}: $ \lambda P . \lambda x . [ \partial(P(x)) \land \forall y [ x \ne y \to \neg P(y) ] ] $
+	\ex \label{only-lf} \textit{only}: $ \lambda P . \lambda x . [ \partial(P(x)) \land \forall y [ x \ne y \to \neg P(y) ] ] $
 \end{exe}
 
 \citeauthor{cb2015} use \citegen{beaver92} partial operator $\partial$ to model presuppositions compositionally: $\partial(\phi)$ is true if $\phi$ is true and undefined otherwise. Notice that presupposing $P(x)$ amounts to presupposing existence, because at the end of derivation $x$ will be substituted for some concrete entity, say $a$, and presupposing $P(a)$ logically entails $\exists x . P(x)$. And the second conjunct is an assertion of the uniqueness of $x$ relative to the predicate $P$, so existence and uniqueness are already built in to \citeauthor{cb2015}'s definition and redundantly encoded in their theory by the \textsc{Iota} type-shift.
@@ -72,18 +70,50 @@ Certain expressions like \textit{read the newspaper} and \textit{take the bus} a
 
 The existence of other examples where the word \textit{the} does not have the semantics of the definite article supports my hypothesis that \textit{the} in \textit{only} NPs is likewise not the definite article.
 
-\subsection{Application to English}
-% TODO: Show derivation of predicative "the only"
-For concreteness, I adopt the following formulae for \textit{only} and \textit{the}:
+An important consequence of this claim is that \textit{only} NPs are not of type $e$. Since uniqueness is not a presupposition, \textit{the only P}, unlike \textit{the P}, is licensed even when \textit{P} has multiple elements. But what would \textit{the only P} denote in such circumstances? It cannot be the undefined individual, because such sentences have defined truth values.
+
+In fact, it is natural to model the semantics of \textit{only} NPs with an existential quantifier. The formula in (\ref{scored-only-goal}) expresses that there is a goal which Anna scored and which is the unique goal in the situation (the universal quantification asserts that all other individuals in the domain of discourse are not goals, and therefore $x$ is the only goal).
 
 \begin{exe}
-	% TODO: I've already given this formula.
-	% Repeated in two-onlys.tex
-	\ex \label{only-lf} \textit{only}: $ \lambda P . \lambda x . [ \partial(P(x)) \land \forall y [ x \ne y \to \neg P(y) ] ] $ (type $\langle et, et \rangle$)
+	\ex \label{scored-only-goal} \textit{Anna scored the only goal}: \\ $\exists x . \textsc{Goal}(x) \land \textsc{Scored}(a, x) \land \forall y [ x \ne y \to \neg \textsc{Goal}(x) ] $
+\end{exe}
+
+(\ref{scored-only-goal}) is much closer to the semantics of \textit{a goal} than that of \textit{the goal}:
+
+\begin{exe}
+	\ex \label{a-goal} \textit{Anna scored a goal}: $\exists x . \textsc{Goal}(x) \land \textsc{Scored}(a, x)$
+	\ex \label{the-goal} \textit{Anna scored the goal}: $\textsc{Scored}(a, \iota x . \textsc{Goal}(x))$
+\end{exe}
+
+So the theoretical claim that \textit{only} NPs are not of type $e$ agrees with the actual semantics of such phrases---\textit{the only P} is similar to \textit{a P} but with one additional condition, embodied by the last clause in (\ref{scored-only-goal}): uniqueness.
+
+% TODO: May move this down one subsection?
+An implication is that, in a compositional derivation, argumental \textit{only} NPs must undergo some kind of raising operation akin to that of indefinites.
+
+\subsection{Empirical coverage}
+Sections \ref{sec:only-nps-english} and \ref{sec:only-nps-russian} reached four main empirical conclusions:
+
+\begin{exe}
+	\ex \label{empirical1} \textit{Only} NPs lack a uniqueness presupposition in English.
+	\ex \label{empirical2} Argumental \textit{only} NPs (with a verb of creation) are ambiguous in English between a determinate and indeterminate reading.
+	\ex \label{empirical3} Argumental \textit{edinstvennyj} NPs must be indefinite when co-occurring with constituent negation, and must be definite otherwise (without extra semantic help).
+	
+	% TODO: This one could be clearer
+	\ex \label{empirical4} Argumental \textit{edinstvennyj} NPs are unambiguous in Russian
+\end{exe}
+
+Let us see how my theory accounts for this data. (\ref{empirical1}) follows directly from my claim that \textit{only} NPs assert uniqueness.
+
+\subsection{Compositional semantics}
+% TODO: Better intro
+
+For concreteness, I adopt the \citegen{cb2015} formula for \textit{only} (see (\ref{only-lf})) and the following formula for \textit{the}:
+
+\begin{exe}
 	\ex \textit{the} (when combining with \textit{only}): $\lambda P . P$ (type $\langle et, et \rangle$)
 \end{exe}
 
-The derivation in (\ref{author-lf})-(\ref{only-author-lf}) shows how the semantics of (\ref{scott}) are correctly accounted for under my theory.
+The derivation in (\ref{author-lf})-(\ref{not-only-author-lf}) shows how the semantics of (\ref{scott}) are correctly accounted for under my theory.
 
 \begin{exe}
 	\ex \label{author-lf} \textit{author of Waverley}: $\lambda x . \textsc{Author}(x)$
@@ -94,6 +124,7 @@ The derivation in (\ref{author-lf})-(\ref{only-author-lf}) shows how the semanti
 	\ex \label{not-only-author-lf} \textit{Scott is not the only author of Waverley}: \\ $\partial(\textsc{Author}(s)) \land \neg \forall y [ s \ne y \to \neg \textsc{Author}(y) ]$
 \end{exe}
 
+% TODO: Necessary? Could be confusing because I talk about a different existential quantifier later
 The universal quantifier in (\ref{not-only-author-lf}) can be re-written as an existential quantifier, to make more clear the assertion that there is another author of \textit{Waverley}:
 
 \begin{exe}
@@ -101,7 +132,9 @@ The universal quantifier in (\ref{not-only-author-lf}) can be re-written as an e
 	\ex $\neg \forall y [ s \ne y \to \neg \textsc{Author}(y) ] \equiv \exists y [ s \ne y \land \textsc{Author}(y) ]$
 \end{exe}
 
-A theory in which \textit{only} does not presuppose uniqueness implies that \textit{only} NPs behave more similarly to indefinites than definites. In particular, since \textit{only} NPs do not presuppose uniqueness, they cannot be of type $e$.
+A compositional account of argumental \textit{only} NPs is somewhat more difficult. Since \textit{only} NPs are not of type $e$, they cannot compose directly with verbs in the way that regular definites and proper nouns do. Instead, they must undergo some kind of raising operation, akin to that of indefinites.
+
+% TODO: Should unify this example with the only goals example.
 
 Let's see how an \textit{only} NP in the argument position like in (\ref{yusuf}) would be interpreted.
 
@@ -109,7 +142,7 @@ Let's see how an \textit{only} NP in the argument position like in (\ref{yusuf})
 	\ex \label{yusuf} Yusuf ate the only cookie.
 \end{exe}
 
-The interpretation of (\ref{yusuf}) would be along the lines of:
+The meaning of (\ref{yusuf}) is roughly captured by the formula in (\ref{yusuf-lf}).
 
 \begin{exe}
 	% TODO: Think about whether the presupposition is correct here.
@@ -121,6 +154,25 @@ In order for (\ref{yusuf-lf}) to be derivable from (\ref{yusuf}), \textit{the on
 \begin{exe}
 	\ex \label{yusuf2} Yusuf didn't eat the only cookie.
 	\ex \label{yusuf2-lf} $\exists x . \neg\textsc{Ate}(y, x) \land \partial(\textsc{Cookie}(x)) \land \forall y [ x \ne y \to \neg \textsc{Cookie}(x) ]$
+\end{exe}
+
+Raising could also account for the ambiguity between the two readings of argumental \textit{only} NPs in examples like (\ref{only-goal}), whose two readings are listed below.
+
+\begin{exe}
+	\ex \label{only-goal-ambig-one} \textbf{One-goal reading} \\ Anna didn't score the only goal. (Maria did.)
+	\ex \label{only-goal-ambig-multiple} \textbf{Multiple-goals reading} \\ Anna didn't score the only goal. (Maria also scored.)
+\end{exe}
+
+(\ref{only-goal-ambig-one}) arises from a derivation where raising brings \textit{the only goal} and its existential quantifier out of the scope of negation:
+
+\begin{exe}
+	\ex $\exists x . \neg \textsc{Score}(a, x) \land \partial(\textsc{Goal}(x)) \land \forall y [ x \ne y \to \neg \textsc{Goal}(x) ]$
+\end{exe}
+
+(\ref{only-goal-ambig-multiple}) arises from a derivation where negation takes scope over the existential quantifier:
+
+\begin{exe}
+	\ex $\neg \exists x . $
 \end{exe}
 
 The necessity of a raising operation is not surprising given the evidence that such phrases cannot be of type $e$. \citet{cb2015} also posited a raising operation for the interpretation of argumental \textit{only} NPs, so the caveat is not even unique to my theory.
