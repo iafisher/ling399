@@ -1,8 +1,8 @@
 \section{A theory of \textit{only} NPs \label{sec:my-theory}}
-In this section, I will present a theory to account for the data in sections \ref{sec:only-nps-english} and \ref{sec:only-nps-russian}, in which DP-internal \textit{only} presupposes existence and asserts uniqueness, and the lexical item \textit{the} that combines with \textit{only} in English is a semantically vacuous determiner.
+In this section, I show that the data in sections \ref{sec:only-nps-english} and \ref{sec:only-nps-russian} may be account for by a theory in which DP-internal \textit{only} presupposes existence and asserts uniqueness, and the lexical item \textit{the} that combines with \textit{only} in English is a semantically vacuous determiner.
 
 \subsection{Existence presupposition}
-Since the definite article\footnote{Although later I will argue that \textit{the} in \textit{the only} is not actually the definite article, here I assume a skeptical reader who has not yet been convinced of the point.} carries an existence presupposition itself, it is difficult to tease apart whether it is \textit{only} or \textit{the} which contributes the existence presupposition in examples where both words are present. Regardless, it is clear from the shared entailment of Scott's authorship in (\ref{exist-presup1}) and its negated counterpart (\ref{exist-presup2}) that definite descriptions with DP-internal \textit{only} have an existence presupposition.
+Since the definite article\footnote{Although later I will argue that \textit{the} in \textit{the only} is not actually the definite article, here I assume a skeptical reader who has not yet been convinced of the point.} presupposes existence itself, it is difficult to tease apart whether it is \textit{only} or \textit{the} which contributes the existence presupposition in examples where both words are present. Regardless, it is clear from the shared entailment of Scott's authorship in (\ref{exist-presup1}) and its negated counterpart (\ref{exist-presup2}) that definite descriptions with DP-internal \textit{only} have an existence presupposition.
 
 \begin{exe}
 	\ex \label{exist-presup1} Scott is the only author of \textit{Waverley}.
@@ -17,10 +17,14 @@ Since the definite article\footnote{Although later I will argue that \textit{the
 		\end{xlist}
 \end{exe}
 
+% TODO: Also show that sentences with only NPs are undefined if existence is not met
+
 To say that DP-internal \textit{only} has an existence presupposition is a bit of a stipulation as it by definition cannot be separated from the definite article. There is stronger evidence that DP-internal \textit{only} has a uniqueness assertion, and if that is the case then the definite article would no longer be compatible with DP-internal \textit{only} since its uniqueness presupposition would clash with \textit{only}'s uniqueness assertion. If the definite article is out, then \textit{only} is the only word left which could plausibly carry the existence presupposition.
 
 \subsection{Uniqueness assertion}
-DP-internal \textit{only} asserts uniqueness. This fact is demonstrated first of all by the \textit{only} NPs in sections \ref{sec:only-nps-english} and \ref{sec:only-nps-russian} which do not entail uniqueness. Since uniqueness can be cancelled by negation in these examples, it cannot be a presupposition.
+DP-internal \textit{only} asserts uniqueness. An affirmative sentence with an \textit{only} NP like (\ref{exist-presup1}) entails the uniqueness of the set that \textit{only} combines with.
+
+That it is an assertion and not a presupposition is demonstrated first of all by the \textit{only} NPs in sections \ref{sec:only-nps-english} and \ref{sec:only-nps-russian} which do not entail uniqueness. Since uniqueness is cancelled by negation in these examples, it must not be presupposed.
 
 Additional evidence supports the point. In (\ref{green-roof-the}), the second speaker cannot felicitously challenge the uniqueness of \textit{house with a green roof}. In (\ref{green-roof-the-only}), the same exchange but with \textit{the only} instead of \textit{the}, the second speaker is free to challenge the uniqueness of the phrase's referent, indicating that uniqueness is at-issue and thus a semantic assertion.
 
@@ -43,8 +47,7 @@ Similar evidence comes directly from \citet{cb2015}:
 
 Only the uniqueness of the phrase with \textit{only} may be negated---a clear indication that \textit{the only ambassador to Spain} lacks a uniqueness presupposition.
 
-\subsection{Contribution of \textit{the}}
-In fact, the existence presupposition and uniqueness assertion are already presented in \citegen{cb2015} proposed logical form for \textit{only}, given below, although they do not identify the entailments in these terms in their paper.
+In fact, the existence presupposition and uniqueness assertion are already present in \citegen{cb2015} proposed logical form for \textit{only}, given below, although they do not identify the entailments in these terms in their paper.
 
 \begin{exe}
 	\ex \label{only-lf} \textit{only}: $ \lambda P . \lambda x . [ \partial(P(x)) \land \forall y [ x \ne y \to \neg P(y) ] ] $
@@ -52,15 +55,14 @@ In fact, the existence presupposition and uniqueness assertion are already prese
 
 \citeauthor{cb2015} use \citegen{beaver92} partial operator $\partial$ to model presuppositions compositionally: $\partial(\phi)$ is true if $\phi$ is true and undefined otherwise. Notice that presupposing $P(x)$ amounts to presupposing existence, because at the end of derivation $x$ will be substituted for some concrete entity, say $a$, and presupposing $P(a)$ logically entails $\exists x . P(x)$. And the second conjunct is an assertion of the uniqueness of $x$ relative to the predicate $P$, so existence and uniqueness are already built in to \citeauthor{cb2015}'s definition and redundantly encoded in their theory by the \textsc{Iota} type-shift.
 
-Where my proposal diverges from \citegen{cb2015} is in the role of \textit{the} in \textit{only} NPs. \citeauthor{cb2015} assert that it is just the definite article. This is why they must substantially change its semantics to fit the evidence. In my proposal, \textit{the} in \textit{only} NPs is not the definite article, but a semantically vacuous determiner.
+\subsection{Contribution of the determiner \textit{the}}
+Where my proposal diverges from \citegen{cb2015} is in the role of \textit{the} in \textit{only} NPs. \citeauthor{cb2015} assume that it is the definite article. In my proposal, \textit{the} in \textit{only} NPs is not the definite article, but a semantically vacuous determiner.
 
-This is not merely an \textit{ad hoc} stipulation. There is independent evidence that \textit{the} may be used in non-definite contexts. For example, the phrase \textit{the unicorn} in (\ref{unicorn}) has a kind reading rather than a definite one.
+In fact, there is independent evidence that \textit{the} may be used in non-definite contexts. For example, the phrase \textit{the unicorn} in (\ref{unicorn}) has a kind reading rather than a definite one. It does not refer to a specific unicorn, but to the entire unicorn species.
 
 \begin{exe}
 	\ex \label{unicorn} The unicorn is a rare beast.
 \end{exe}
-
-Certain expressions like \textit{read the newspaper} and \textit{take the bus} also do not seem to involve proper definites, as the referents of \textit{the newspaper} and \textit{the bus} need not be familiar or unique. They are essentially identical to saying \textit{read a newspaper} and \textit{take a bus}.
 
 \citet{schwarz09} presents ``donkey sentences'' like (\ref{donkey}) in which the definite \textit{the donkey} does not refer to a particular donkey but instead co-varies with the indefinite NP in the antecedent clause.
 
@@ -70,9 +72,11 @@ Certain expressions like \textit{read the newspaper} and \textit{take the bus} a
 
 The determiner \textit{the} in (\ref{donkey}) cannot be the definite article as it is normally understood.
 
-The existence of independent examples where the word \textit{the} does not have the semantics of the definite article lends credence to my hypothesis that \textit{the} in \textit{only} NPs is likewise not the definite article.
+Certain expressions like \textit{read the newspaper} and \textit{take the bus} also do not seem to involve proper definites, as the referents of \textit{the newspaper} and \textit{the bus} need not be familiar or unique. They are essentially identical to saying \textit{read a newspaper} and \textit{take a bus}.
 
-An important consequence of this claim is that \textit{only} NPs are not of type $e$. Since uniqueness is not a presupposition, \textit{the only P}, unlike \textit{the P}, is licensed even when \textit{P} has multiple elements. But what would \textit{the only P} denote in such circumstances? It cannot be the undefined individual, because such sentences have defined truth values.
+The existence of other examples besides negated \textit{only} NPs in which the word \textit{the} does not have the semantics of the definite article lends credence to my hypothesis that \textit{the} in \textit{only} NPs is likewise not the definite article.
+
+An important consequence of this claim is that \textit{only} NPs are never of type $e$. Since uniqueness is not a presupposition, \textit{the only P}, unlike \textit{the P}, is licensed even when \textit{P} has multiple elements. But what would \textit{the only P} denote in such circumstances? It cannot be the undefined individual, because as we have seen such sentences have defined truth values.
 
 In fact, it is natural to model the semantics of \textit{only} NPs with an existential quantifier. The formula in (\ref{scored-only-goal}) expresses that there is a goal which Anna scored and which is the unique goal in the situation (the universal quantification asserts that all other individuals in the domain of discourse are not goals, and therefore $x$ is the only goal).
 
@@ -87,24 +91,24 @@ In fact, it is natural to model the semantics of \textit{only} NPs with an exist
 	\ex \label{the-goal} \textit{Anna scored the goal}: $\textsc{Scored}(a, \iota x . \textsc{Goal}(x))$
 \end{exe}
 
-So the theoretical claim that \textit{only} NPs are not of type $e$ agrees with the actual semantics of such phrases---\textit{the only P} is similar to \textit{a P} but with one additional condition, embodied by the last clause in (\ref{scored-only-goal}): uniqueness.
+So the theoretical claim that \textit{only} NPs are not of type $e$ agrees with the actual semantics of such phrases---\textit{the only P} is similar in meaning to \textit{a P} but with one additional condition, embodied by the last clause in (\ref{scored-only-goal}): uniqueness.
 
 % TODO: May move this down one subsection?
 An implication is that, in a compositional derivation, argumental \textit{only} NPs must undergo some kind of raising operation akin to that of indefinites.
 
 \subsection{Empirical coverage}
-Sections \ref{sec:only-nps-english} and \ref{sec:only-nps-russian} reached four main empirical conclusions:
+Sections \ref{sec:only-nps-english} and \ref{sec:only-nps-russian} made four main empirical observations:
 
 \begin{exe}
-	\ex \label{empirical1} \textit{Only} NPs lack a uniqueness presupposition in English.
-	\ex \label{empirical2} Argumental \textit{only} NPs (with a verb of creation) are ambiguous in English between a determinate and indeterminate reading.
-	\ex \label{empirical3} Argumental \textit{edinstvennyj} NPs must be indefinite when co-occurring with constituent negation, and must be definite otherwise (without extra semantic help).
-	\ex \label{empirical4} Argumental \textit{edinstvennyj} NPs are never ambiguous in Russian. In a single sentence, they are always either definite or indefinite.
+	\ex \label{empirical1} \textit{Only} NPs do not presuppose uniqueness in English.
+	\ex \label{empirical2} Argumental \textit{only} NPs (with a verb of creation) are ambiguous in English between a definite and indefinite reading.
+	\ex \label{empirical3} Argumental \textit{edinstvennyj} NPs must be indefinite when co-occurring with constituent negation, and must be definite otherwise (without extra semantic help---see section \ref{sec:edinstvennyj}).
+	\ex \label{empirical4} Argumental \textit{edinstvennyj} NPs are never ambiguous in Russian, as they sometimes are in English.
 \end{exe}
 
 Let us see how my theory accounts for this data. (\ref{empirical1}) follows directly from my claim that \textit{only} NPs assert uniqueness.
 
-The observation in (\ref{empirical2}) stems from sentences like (\ref{only-goal}), repeated below.
+The observation in (\ref{empirical2}) is evinced by sentences like (\ref{only-goal}), repeated below.
 
 \begin{exe}
 	\exr{only-goal} Anna didn't score the only goal.
@@ -126,29 +130,29 @@ The observation in (\ref{empirical2}) stems from sentences like (\ref{only-goal}
 	\end{xlist}
 \end{exe}
 
-(\ref{only-goal-ambig-one}) and (\ref{only-goal-ambig-multiple}) differ only in whether the uniqueness assertion of \textit{the only goal} is negated.
+From (\ref{only-goal-ambig-one}) and (\ref{only-goal-ambig-multiple}), it is clear that the two sentences differ only in whether the uniqueness assertion of \textit{the only goal} is negated.
 
-The ingredients for an account of (\ref{only-goal-ambig-one}) and (\ref{only-goal-ambig-multiple}) are all present. DP-internal \textit{only} carries a uniqueness presupposition. Argumental \textit{only} NPs must undergo raising. In (\ref{only-goal-ambig-one}), it seems that \textit{the only goal} has raised outside of the scope of negation, so that its uniqueness assertion is not negated. In (\ref{only-goal-ambig-multiple}), \textit{the only goal} has raised to some lower position (perhaps the specifier of VP) in the scope of negation, so that its uniqueness assertion is negated. Thus my theory has an explanation for the ambiguity of negated argumental \textit{only} NPs.
+The ingredients for an account of (\ref{only-goal-ambig-one}) and (\ref{only-goal-ambig-multiple}) are all present. DP-internal \textit{only} carries a uniqueness presupposition. Argumental \textit{only} NPs must undergo raising. In (\ref{only-goal-ambig-one}), \textit{the only goal} has raised outside of the scope of negation, so that its uniqueness assertion is not negated. In (\ref{only-goal-ambig-multiple}), \textit{the only goal} has raised to some lower position (perhaps the specifier of VP) in the scope of negation, so that its uniqueness assertion is negated. Thus my theory has an explanation for the ambiguity of negated argumental \textit{only} NPs.
 
-A similar explanation holds for the ambiguity in Russian. It is exclusively \textit{edinstvennyj} NPs under constituent negation that must be indefinite. Since constituent negation is syntactically attached to the \textit{only} NP itself, it cannot raise out of negation; wherever it raises to, it will take the negation particle with it. It is not clear why no ambiguity arises with sentential negation in Russian (\textit{edinstvennyj} NPs in sententially negated sentences are always definite), but whatever (presumably syntactic) reason there is that \textit{edinstvennyj} NPs must raise outside of the scope of sentential negations would also account for the observation in (\ref{empirical4}) that argumental \textit{edinstvennyj} NPs are never ambiguous as to a definite or indefinite reading.
+A similar explanation holds for the ambiguity in Russian. Only argumental \textit{edinstvennyj} NPs under constituent negation are forced to be indefinite. Since the constituent negation particle is syntactically attached to the \textit{only} NP itself, it cannot raise out of negation; wherever it raises to, it will take the negation particle with it. It is not clear why no ambiguity arises with sentential negation in Russian (\textit{edinstvennyj} NPs in sententially negated sentences are always definite), but whatever (presumably syntactic) reason there is that \textit{edinstvennyj} NPs must raise outside of the scope of sentential negations would also account for the observation in (\ref{empirical4}) that argumental \textit{edinstvennyj} NPs are never ambiguous as to a definite or indefinite reading. The ambiguity in English is due to raising possibilities that are unavailable in Russian.
 
-As discussed in section \ref{sec:no-anti-unique}, some idiolects of Russian allow reference to a \textit{ne edinstvennyj} NP. Note that allowing reference is a weaker condition than determinacy, since indefinites allow reference as well. However, negated indefinites generally do not:
+As discussed in section \ref{sec:no-anti-unique}, some idiolects of Russian allow reference to a \textit{ne edinstvennyj} NP. Note that allowing reference is a weaker condition than definiteness, since indefinites allow reference as well. However, negated indefinites generally do not:
 
 \begin{exe}
 	\ex Anna didn't score a goal. *It was a bicycle kick.
 \end{exe}
 
-So the dominant pattern in Russian where \textit{ne edinstvennyj} NPs do not allow reference is expected. The question is, how is it that they \textit{do} allow reference for some speakers?
+So the dominant pattern in Russian that \textit{ne edinstvennyj} NPs do not allow reference is expected. The question is, how is it that they \textit{do} allow reference for some speakers?
 
-One approach is to reconsider the licensing conditions of pronoun reference. Notice that \textit{ne edinstvennyj} NPs entail a multiplicity of objects. \textit{Ne edinstvennuju lekciju} `not only lecture' in (\ref{anna3}), for instance, entails that multiple lectures were given.
+One approach is to reconsider the licensing conditions of pronoun reference. Notice that \textit{ne edinstvennyj} NPs entail a multiplicity of objects. \textit{Ne edinstvennuju lekciju} `not only lecture' in (\ref{no-anti-unique}), for instance, entails that multiple lectures were given.
 
-What would be required in the semantics is some operation to pick out one of the multiplicity of goals. This selection operation, which would extract a singular referent from a multiplicity, must be constrained by the form of the rest of the sentence: \textit{ona} in (\ref{no-anti-unique}) may not refer to just any lecture that Chomsky gave, but specifically the one that Anna attended.
+What would be required in the semantics is some operation to pick out one of the multiplicity of lectures. This selection operation, which would extract a singular referent from a multiplicity, must be constrained by the form of the rest of the sentence: \textit{ona} in (\ref{no-anti-unique}) may not refer to just any lecture that Chomsky gave, but specifically the one that Anna attended.
 
 A phrase yielding an antecedent other than what it strictly denotes is not unknown in natural languages: complement anaphora are just such a phenomenon. A complement anaphor is a pronoun whose antecedent is the complement of some set previously denoted \citep{nouwen03, schwarz09}. In (\ref{kennedy}), the antecedent of \textit{they} in the second sentence is the complement of \textit{few congressmen}, i.e. few congressmen admire Kennedy so the majority of them think he is incompetent. Only certain quantifiers allow complement anaphora, as (\ref{kennedy2}) shows.
 
 \begin{exe}
 	\ex \label{kennedy} Few congressmen admire Kennedy. They think he's incompetent.
-	\ex \label{kennedy2} A few congressmen admire Kennedy. \# They think he's incompetent.
+	\ex \label{kennedy2} A few congressmen admire Kennedy. \#They think he's incompetent.
 \end{exe}
 
 (\ref{kennedy2}) is strange because the antecedent of \textit{they} can only be \textit{a few congressmen}, which would counterintuitively imply that the congressmen who admire Kennedy also think he is incompetent. The possibility of referring to the complement set of \textit{a few congressmen} is not possible with the quantifier \textit{a few}.
@@ -159,9 +163,9 @@ The same pattern holds in Russian with \textit{malo kto iz} `few' and \textit{ne
 	\ex \gll Malo kto iz kongressmenov vosxi\v{s}\v{c}aetsja Kennedi. Oni dumajut, \v{c}to on neumelyj.\\
 	Few who from congressmen admire Kennedy they think that he incompetent\\
 	\glt `Few congressmen admire Kennedy. They think he's incompetent.'
-	\ex \gll Neskol'ko kongressmenov vosxi\v{s}\v{c}ajutsja Kennedi. \#Oni dumajut, \v{c}to on neumelyj.\\
-	{A few} congressmen admire Kennedy they think that he incompetent\\
-	\glt `A few congressmen admire Kennedy They think he's incompetent.'
+	\ex \gll Neskol'ko kongressmenov vosxi\v{s}\v{c}ajutsja Kennedi. \# Oni dumajut, \v{c}to on neumelyj.\\
+	{A few} congressmen admire Kennedy {} they think that he incompetent\\
+	\glt `A few congressmen admire Kennedy. They think he's incompetent.'
 \end{exe}
 
 Complement anaphora illustrate that the antecedent of a pronoun need not always be explicitly present in the semantics, as long as it can be derived from some entity that is present. Complement anaphora involve the set complement relationship; the data from Russian suggests that some individual-selection operation on sets may also be available.
@@ -177,7 +181,7 @@ Similarly, (\ref{no-anti-unique}) involves both a single lecture that Anna atten
 
 Under this account, \textit{ne edinstvennuju lekciju} would denote the single lecture that Anna attended, but would also carry an entailment about the alternative set, i.e. the additional lectures she did not attend.
 
-The two approaches I have proposed are not incompatible. It could be that the set selection operation is sensitive to the alternative set that DP-internal \textit{only} induces in this case. At any rate, I hope to have made the ability of \textit{ne edinstvennuju lekciju} in some idiolects to entail multiple lectures but denote a single one a little less puzzling.
+The two approaches I have proposed are not incompatible. It could be that the set selection operation is sensitive to the alternative set that DP-internal \textit{only} induces in this case.
 
 The speakers who accepted the sentences in this section had much greater exposure to English to those who rejected them. There is no immediately clear reason why this correlation would hold, given that (\ref{no-anti-unique}) is impossible in English. Further research will be necessary to isolate the demographic characteristics of the speakers of this variant of Russian.
 
